@@ -19,7 +19,7 @@ class AboutHeaderDescription extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextTheme textTheme = Theme.of(context).textTheme;
     final TextStyle? style = textTheme.bodyText1?.copyWith(
-      fontSize: responsiveSize(context, 30, 44, medium: 34),
+      fontSize: responsiveSize(context, 22, 28, medium: 24),
       height: 1.2,
       fontWeight: FontWeight.w200,
     );
@@ -30,7 +30,7 @@ class AboutHeaderDescription extends StatelessWidget {
           controller: controller,
           text: StringConst.ABOUT_DEV_CATCH_LINE_1,
           width: width,
-          maxLines: 2,
+          maxLines: 5,
           textStyle: style,
         ),
         const SpaceH24(),

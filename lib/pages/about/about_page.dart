@@ -14,7 +14,6 @@ import '../../widgets/helper/custom_spacer.dart';
 import '../../widgets/scaffolding/animated_footer.dart';
 import '../../widgets/scaffolding/page_wrapper.dart';
 import 'widgets/about_header.dart';
-import 'widgets/technology_section.dart';
 
 class AboutPage extends StatefulWidget {
   static const String aboutPageRoute = StringConst.ABOUT_PAGE;
@@ -111,7 +110,8 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
       height: 2.0,
       // letterSpacing: 2,
     );
-    final TextStyle? bodyText2Style = textTheme.bodyText1?.copyWith(color: AppColors.grey750);
+    final TextStyle? bodyText2Style =
+        textTheme.bodyText1?.copyWith(color: AppColors.grey750);
     final TextStyle? titleStyle = textTheme.subtitle1?.copyWith(
       color: AppColors.black,
       fontSize: responsiveSize(
@@ -224,23 +224,23 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                         ),
                       ],
                     ),
-                    footer: VisibilityDetector(
-                      key: const Key('technology-list'),
-                      onVisibilityChanged: (visibilityInfo) {
-                        if (visibilityInfo.visibleFraction * 100 > 60) {
-                          _technologyListController.forward();
-                        }
-                      },
-                      child: Column(
-                        children: <Widget>[
-                          const SpaceH40(),
-                          TechnologySection(
-                            width: contentAreaWidth,
-                            controller: _technologyListController,
-                          ),
-                        ],
-                      ),
-                    ),
+                    // footer: VisibilityDetector(
+                    //   key: const Key('technology-list'),
+                    //   onVisibilityChanged: (visibilityInfo) {
+                    //     if (visibilityInfo.visibleFraction * 100 > 60) {
+                    //       _technologyListController.forward();
+                    //     }
+                    //   },
+                    //   child: Column(
+                    //     children: <Widget>[
+                    //       const SpaceH40(),
+                    //       TechnologySection(
+                    //         width: contentAreaWidth,
+                    //         controller: _technologyListController,
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
                   ),
                 ),
                 const CustomSpacer(heightFactor: 0.1),
@@ -295,7 +295,8 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                 VisibilityDetector(
                   key: const Key('quote-section'),
                   onVisibilityChanged: (visibilityInfo) {
-                    double visiblePercentage = visibilityInfo.visibleFraction * 100;
+                    double visiblePercentage =
+                        visibilityInfo.visibleFraction * 100;
                     if (visiblePercentage > 50) {
                       _quoteController.forward();
                     }
@@ -353,7 +354,8 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
 
   List<Widget> _buildSocials(List<SocialData> data) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-    final TextStyle? style = textTheme.bodyText1?.copyWith(color: AppColors.grey750);
+    final TextStyle? style =
+        textTheme.bodyText1?.copyWith(color: AppColors.grey750);
     final TextStyle? slashStyle = textTheme.bodyText1?.copyWith(
       color: AppColors.grey750,
       fontWeight: FontWeight.w400,

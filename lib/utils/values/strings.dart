@@ -85,34 +85,35 @@ class StringConst {
   /// About Page
   ///
   static const String ABOUT_DEV_CATCH_LINE_1 =
-      "I am a curious individual who loves to understand and solve problems.";
+      "Im Rahmen der Weiterbildung zum Staatlich geprüften Techniker, in der Fachrichtung Maschinenbautechnik, an der Technischen Beruflichen Schule 1 in Bochum ist eine einjährige Projektarbeit durchzuführen.";
   // static const String ABOUT_DEV_CATCH_LINE_2 = "";
   // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
   static const String ABOUT_DEV_CATCH_LINE_4 =
-      "I also have a passion for music.";
+      "Diese wird ab dem zweiten Semester erarbeitet.";
   // static const String ABOUT_DEV_CATCH_LINE_5 = "";
-  static const String ABOUT_DEV_STORY = "Story";
-  static const String ABOUT_DEV_STORY_TITLE = "A little bit about myself";
+  static const String ABOUT_DEV_STORY = "Beschreibung des Projekts";
+  static const String ABOUT_DEV_STORY_TITLE = "Das Projekt";
   static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "With a rational and exploring nature, I have embarked on a journey of exploration across "
-      "various fields, delving mostly into entrepreneurship, computer science and psychology. These "
-      "interests have provided me with valuable insights and knowledge in my personal and "
-      "professional Life. Currently, I am pursuing a dual degree in Industrial Engineering and "
-      "Psychology, a unique blend that fuels my analytical and social mind.";
+      "Die Themen der Projektarbeit wurden im ersten Semester der Weiterbildung zum staatlich"
+      "geprüften Techniker in der Fachrichtung Maschinenbautechnik von den Projektlehrern vermittelt."
+      " In der Phase der Projektfindung ging es darum, den richtigen Projektpartner zu finden,"
+      " idealerweise ein ortsansässiges Maschinenbauunternehmen, "
+      "dass ihr Anforderungsprofil und die Kenntnisse Ihrer Studierenden berücksichtigt.";
   static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "My love for coding ignited during my initial programming course in university, and it has grown "
-      "ever since. Through a combination of self-teaching and university projects, I've honed my "
-      "skills. These experiences have culminated in numerous achievements in my professional career.";
+      "Der Fokus der Projektarbeit sollte auf Entwicklung, Produktion und Konstruktion liegen. "
+      "Um bei der Suche nach einem geeigneten Projektpartner kein großes Risiko einzugehen,"
+      "haben wir zunächst unsere ehemaligen Arbeitgeber gefragt."
+      " Bei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
   static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "My strength are my keen eyes for details and finding unique ways to solving complex problems. "
-      "I enjoy pushing the boundaries of my Knowledge and finding ways to manifest my Ideas into the"
-      "real world. As I am an avid reader, I am also a lover of all forms of art, music, poetry, "
-      "science of engineering and human and animal psychology.";
-  static const String ABOUT_DEV_TECHNOLOGY = "Technology";
+      "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu finden ohne,"
+      "dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
+      " Die Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern mittels einer Kippsicherung"
+      "am Kehrmaschinenaufbau ist ein weiteres Ziel.";
+  static const String ABOUT_DEV_TECHNOLOGY = "Problematik";
   static const String PROGRAMMING_LANGUAGES = "Programming Languages";
   static const String APPLICATIONS = "Applications";
   static const String OTHER_SOFTWARE = "Other Software";
-  static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use";
+  static const String ABOUT_DEV_TECHNOLOGY_TITLE = "Die Probleme";
   static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
       "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
   static const String ABOUT_DEV_CONTACT = "Contact";
