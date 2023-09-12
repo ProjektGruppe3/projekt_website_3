@@ -85,6 +85,22 @@ class SimpleFooterSmall extends StatelessWidget {
           children: <Widget>[
             InkWell(
               onTap: () {
+                Functions.launchUrl(StringConst.BASED_ON_LINK);
+              },
+              child: AnimatedLineThroughText(
+                text: StringConst.BASED_ON,
+                isUnderlinedByDefault: true,
+                isUnderlinedOnHover: false,
+                hoverColor: AppColors.white,
+                coverColor: AppColors.black,
+                textStyle: style?.copyWith(
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
+            const SpaceW8(),
+            InkWell(
+              onTap: () {
                 Functions.launchUrl(StringConst.DESIGN_LINK);
               },
               child: AnimatedLineThroughText(

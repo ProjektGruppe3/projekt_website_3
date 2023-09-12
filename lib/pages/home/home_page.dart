@@ -134,12 +134,19 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 children: <Widget>[
                   AnimatedTextSlideBoxTransition(
                     controller: _recentWorksController,
-                    text: StringConst.CRAFTED_WITH_LOVE,
+                    text: StringConst.Website_Into,
+                    maxLines: 5,
+                    width: responsiveSize(
+                      context,
+                      assignWidth(context, 0.80),
+                      assignWidth(context, 0.70),
+                      small: assignWidth(context, 0.70),
+                    ),
                     textStyle: textTheme.headline4?.copyWith(
                       color: AppColors.black,
                       fontSize: responsiveSize(context, 15, 24,
                           medium: 20, small: 18),
-                      height: 2.0,
+                      height: 2,
                     ),
                   ),
                   // const SpaceH16(),

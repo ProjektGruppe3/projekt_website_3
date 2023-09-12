@@ -36,7 +36,7 @@ class HomeAboutDevState extends State<HomeAboutDev> {
     );
     final double headerFontSize =
         responsiveSize(context, 28, 48, medium: 36, small: 32);
-    return Column(
+    return Column(mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
@@ -136,7 +136,6 @@ class HomeAboutDevState extends State<HomeAboutDev> {
             },
           ),
         ),
-        const SizedBox(height: 80.0),
       ],
     );
   }

@@ -167,8 +167,8 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     controller: _storyController,
                     number: "/01 ",
                     width: contentAreaWidth,
-                    section: StringConst.ABOUT_DEV_STORY.toUpperCase(),
-                    title: StringConst.ABOUT_DEV_STORY_TITLE,
+                    section: StringConst.Beschreibung_Projekt.toUpperCase(),
+                    title: StringConst.Beschreibungs_Titel,
                     body: Column(
                       children: <Widget>[
                         AnimatedPositionedText(
@@ -176,7 +176,7 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           width: widthOfBody,
                           maxLines: 30,
                           // factor: 1.25,
-                          text: StringConst.ABOUT_DEV_STORY_CONTENT_1,
+                          text: StringConst.Inhalt_der_Beschreibung,
                           textStyle: bodyText1Style,
                         ),
                         AnimatedPositionedText(
@@ -184,7 +184,7 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           width: widthOfBody,
                           maxLines: 30,
                           factor: 1.25,
-                          text: StringConst.ABOUT_DEV_STORY_CONTENT_2,
+                          text: StringConst.Inhalt_Beschreibung2,
                           textStyle: bodyText1Style,
                         ),
                         AnimatedPositionedText(
@@ -192,7 +192,7 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                           width: widthOfBody,
                           maxLines: 30,
                           factor: 1.25,
-                          text: StringConst.ABOUT_DEV_STORY_CONTENT_3,
+                          text: StringConst.Inhalt_Beschreibung3,
                           textStyle: bodyText1Style,
                         ),
                       ],
@@ -211,15 +211,15 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     controller: _technologyController,
                     number: "/02 ",
                     width: contentAreaWidth,
-                    section: StringConst.ABOUT_DEV_TECHNOLOGY.toUpperCase(),
-                    title: StringConst.ABOUT_DEV_TECHNOLOGY_TITLE,
+                    section: StringConst.Problematik_Beschreibung.toUpperCase(),
+                    title: StringConst.Problematikabschnitt,
                     body: Column(
                       children: <Widget>[
                         AnimatedPositionedText(
                           controller: technologySectionAnimation,
                           width: widthOfBody,
                           maxLines: 12,
-                          text: StringConst.ABOUT_DEV_TECHNOLOGY_CONTENT,
+                          text: StringConst.Problematik_Inhalt,
                           textStyle: bodyText1Style,
                         ),
                       ],
@@ -255,37 +255,16 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     controller: _contactController,
                     number: "/03 ",
                     width: contentAreaWidth,
-                    section: StringConst.ABOUT_DEV_CONTACT.toUpperCase(),
+                    section: StringConst.Loesungsansatz.toUpperCase(),
                     title: StringConst.ABOUT_DEV_CONTACT_SOCIAL,
                     body: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        const SpaceH20(),
-                        Wrap(
-                          spacing: 20,
-                          runSpacing: 20,
-                          children: _buildSocials(Data.socialData),
-                        ),
-                      ],
-                    ),
-                    footer: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        const SpaceH40(),
-                        AnimatedTextSlideBoxTransition(
-                          controller: _contactController,
-                          text: StringConst.ABOUT_DEV_CONTACT_EMAIL,
-                          textStyle: titleStyle,
-                        ),
-                        const SpaceH40(),
-                        AnimatedLineThroughText(
-                          text: StringConst.DEV_EMAIL,
-                          hasSlideBoxAnimation: true,
-                          controller: _contactController,
-                          onTap: () {
-                            Functions.launchUrl(StringConst.EMAIL_URL);
-                          },
-                          textStyle: bodyText2Style,
+                        AnimatedPositionedText(
+                          controller: technologySectionAnimation,
+                          width: widthOfBody,
+                          maxLines: 12,
+                          text: StringConst.Loesungsinhalt,
+                          textStyle: bodyText1Style,
                         ),
                       ],
                     ),

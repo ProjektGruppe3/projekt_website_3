@@ -45,8 +45,8 @@ class StringConst {
   static const String DEV_DESC = "Daniel G./ Niklas B./ Jurij K.";
   static const String SEE_MY_WORK = "Das Projekt";
   static const String SCROLL_DOWN = "Scroll Down";
-  static const String CRAFTED_WITH_LOVE =
-      "Auf dieser Website wollen wir euch unser Projekt im Rahmen der Weiterbildung zum Staatlich geprüften Techniker,\nin der Fachrichtung Maschinenbautechnik präsentieren. Bei unserer Projektarbeit handelt es sich um die Entwicklung und\nKonstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
+  static const String Website_Into =
+      "Auf dieser Website wollen wir euch unser Projekt im Rahmen der Weiterbildung zum Staatlich geprüften Techniker, in der Fachrichtung Maschinenbautechnik präsentieren.\nBei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
   static const String SELECTION = "Here is selection of my recent work.";
   static const String THERES_MORE = "There's more";
   static const String VIEW_ALL_PROJECTS = "view all projects";
@@ -91,37 +91,36 @@ class StringConst {
   static const String ABOUT_DEV_CATCH_LINE_4 =
       "Diese wird ab dem zweiten Semester erarbeitet.";
   // static const String ABOUT_DEV_CATCH_LINE_5 = "";
-  static const String ABOUT_DEV_STORY = "Beschreibung des Projekts";
-  static const String ABOUT_DEV_STORY_TITLE = "Das Projekt";
-  static const String ABOUT_DEV_STORY_CONTENT_1 =
+  static const String Beschreibung_Projekt = "Beschreibung";
+  static const String Beschreibungs_Titel = "Das Projekt";
+  static const String Inhalt_der_Beschreibung =
       "Die Themen der Projektarbeit wurden im ersten Semester der Weiterbildung zum staatlich"
       "geprüften Techniker in der Fachrichtung Maschinenbautechnik von den Projektlehrern vermittelt."
       " In der Phase der Projektfindung ging es darum, den richtigen Projektpartner zu finden,"
       " idealerweise ein ortsansässiges Maschinenbauunternehmen, "
       "dass ihr Anforderungsprofil und die Kenntnisse Ihrer Studierenden berücksichtigt.";
-  static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "Der Fokus der Projektarbeit sollte auf Entwicklung, Produktion und Konstruktion liegen. "
-      "Um bei der Suche nach einem geeigneten Projektpartner kein großes Risiko einzugehen,"
-      "haben wir zunächst unsere ehemaligen Arbeitgeber gefragt."
-      " Bei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
-  static const String ABOUT_DEV_STORY_CONTENT_3 =
+  static const String Inhalt_Beschreibung2 =
+      "Zu unserem Glück hat sich der ehemalige Arbeitgeber von Jurij Kuvaev,"
+      "die Brock Kehrtechnik GmbH, sich bereit erklärt uns ein Technikerprojekt zu stellen."
+      "Bei unserem Projekt beschäftigen wir uns über das vorhandene Transportsystem der Kehrmaschinenaufbauten.";
+  static const String Inhalt_Beschreibung3 =
       "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu finden ohne,"
       "dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
       " Die Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern mittels einer Kippsicherung"
       "am Kehrmaschinenaufbau ist ein weiteres Ziel.";
-  static const String ABOUT_DEV_TECHNOLOGY = "Problematik";
+  static const String Problematik_Beschreibung = "Problematik";
   static const String PROGRAMMING_LANGUAGES = "Programming Languages";
   static const String APPLICATIONS = "Applications";
   static const String OTHER_SOFTWARE = "Other Software";
-  static const String ABOUT_DEV_TECHNOLOGY_TITLE = "Die Probleme";
-  static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
-      "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
-  static const String ABOUT_DEV_CONTACT = "Contact";
-  static const String ABOUT_DEV_CONTACT_SOCIAL = "Social";
-  static const String ABOUT_DEV_CONTACT_EMAIL = "Email";
-  static const String FAMOUS_QUOTE =
-      "“I have no special talents. I am only passionately curious.”";
-  static const String FAMOUS_QUOTE_AUTHOR = "Albert Einstein";
+  static const String Problematikabschnitt = "Die Probleme";
+  static const String Problematik_Inhalt =
+      "Beim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende durch mehrfachen Nachjustieren der Hacken den Lack abkratzen. Ist dies alles gelungen, muss der Aufbau noch auf das LKW-Chassis mithilfe des Deckenkrans in Position gebracht werden, das Ausrichten erfordert ebenfalls mehrere Versuche, um schon montierte Aggregate und Schläuche sowohl am LKW als auch am Aufbau nicht zu beschädigen.";
+  static const String Loesungsansatz = "Lösung";
+  static const String ABOUT_DEV_CONTACT_SOCIAL = "Lösungsansatz";
+  static const String Loesungsinhalt =
+      "Beim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende dueim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende du";
+  static const String FAMOUS_QUOTE = "";
+  static const String FAMOUS_QUOTE_AUTHOR = "";
 
   /// Footer
   static const String WORK_TOGETHER = "Let's work together.";
@@ -152,7 +151,7 @@ class StringConst {
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH_FLUTTER = "Built using ";
-  static const String DEV_EMAIL = "Grams_Daniel@web.de";
+  static const String DEV_EMAIL = "";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
