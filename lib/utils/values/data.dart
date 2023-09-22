@@ -247,7 +247,7 @@ class Data {
 
   static List<ExperienceData> experienceData = <ExperienceData>[
     ExperienceData(
-      company: StringConst.COMPANY_4,
+      company: StringConst.Name,
       position: StringConst.COMPANY_4_POSITION,
       companyUrl: StringConst.COMPANY_4_URL,
       roles: <String>[
@@ -258,7 +258,7 @@ class Data {
         StringConst.COMPANY_4_ROLE_5,
       ],
       location: StringConst.COMPANY_4_LOCATION,
-      duration: StringConst.COMPANY_4_DURATION,
+      duration: StringConst.Name_Seitenleiste,
     ),
     ExperienceData(
       company: StringConst.COMPANY_3,

@@ -6,7 +6,8 @@ import '../pages/experience/experience_page.dart';
 import '../pages/home/home_page.dart';
 import '../pages/project_detail/project_detail_page.dart';
 
-typedef PathWidgetBuilder = Widget Function(BuildContext, String? /*Map<String, String>*/);
+typedef PathWidgetBuilder = Widget Function(
+    BuildContext, String? /*Map<String, String>*/);
 
 class Path {
   const Path(this.pattern, this.builder);

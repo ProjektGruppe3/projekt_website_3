@@ -101,11 +101,11 @@ class StringConst {
       "dass ihr Anforderungsprofil und die Kenntnisse Ihrer Studierenden berücksichtigt.";
   static const String Inhalt_Beschreibung2 =
       "Zu unserem Glück hat sich der ehemalige Arbeitgeber von Jurij Kuvaev,"
-      "die Brock Kehrtechnik GmbH, sich bereit erklärt uns ein Technikerprojekt  zu stellen."
+      " die Brock Kehrtechnik GmbH, sich bereit erklärt uns ein Technikerprojekt  zu stellen."
       " Bei unserem Projekt beschäftigen wir uns über das vorhandene Transportsystem der Kehrmaschinenaufbauten.";
   static const String Inhalt_Beschreibung3 =
       "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu finden ohne,"
-      "dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
+      " dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
       " Die Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern mittels einer Kippsicherung"
       " am Kehrmaschinenaufbau ist ein weiteres Ziel.";
   static const String Problematik_Beschreibung = "Problematik";
@@ -114,11 +114,10 @@ class StringConst {
   static const String OTHER_SOFTWARE = "Other Software";
   static const String Problematikabschnitt = "Die Probleme";
   static const String Problematik_Inhalt =
-      "Beim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende durch mehrfachen Nachjustieren der Hacken den Lack abkratzen. Ist dies alles gelungen, muss der Aufbau noch auf das LKW-Chassis mithilfe des Deckenkrans in Position gebracht werden, das Ausrichten erfordert ebenfalls mehrere Versuche, um schon montierte Aggregate und Schläuche sowohl am LKW als auch am Aufbau nicht zu beschädigen.";
+      "Beim begutachten des IST-Zustandes sind uns einige Mängel aufgefallen:\n1. Beim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende durch mehrfachen Nachjustieren der ca. 30kg schweren Hacken den Lack abkratzen.\n2. Man benötigt mehrere Anläufe um den Aufbau auf dem LKW-Chassis sicher und unbeschädigt zu platzieren dies erfolgt mithilfe eines Deckenkrans.\n3. Es besteht eine hohe Gefahr während des gesamten Prozesses, dass Mitarbeiter sich verletzen können.";
   static const String Loesungsansatz = "Lösung";
   static const String ABOUT_DEV_CONTACT_SOCIAL = "Lösungsansatz";
-  static const String Loesungsinhalt =
-      "Beim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende dueim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende du";
+  static const String Loesungsinhalt = "Hier entsteht ein Text";
   static const String FAMOUS_QUOTE = "";
   static const String FAMOUS_QUOTE_AUTHOR = "";
 
@@ -449,9 +448,8 @@ class StringConst {
   static const String COMPANY_3_LOCATION = "";
 
   //
-  static const String COMPANY_4_DURATION = "Since Mar 2023 ";
-  static const String COMPANY_4 =
-      "Lead Software Developer - Utopia-Community GbR (Startup)";
+  static const String Name_Seitenleiste = "Daniel Grams";
+  static const String Name = "Daniel Grams";
   static const String COMPANY_4_URL = "";
   static const String COMPANY_4_POSITION =
       "Responsible for the development of a web and app platform for "
