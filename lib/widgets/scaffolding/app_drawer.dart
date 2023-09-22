@@ -5,7 +5,6 @@ import '../../../utils/adaptive_layout.dart';
 import '../../../utils/values/values.dart';
 import '../../pages/home/home_page.dart';
 import '../../utils/values/spaces.dart';
-import '../buttons/socials_icon_button.dart';
 import 'app_logo.dart';
 import 'page_wrapper.dart';
 import 'top_navigation_item.dart';
@@ -32,7 +31,8 @@ class AppDrawer extends StatefulWidget {
   AppDrawerState createState() => AppDrawerState();
 }
 
-class AppDrawerState extends State<AppDrawer> with SingleTickerProviderStateMixin {
+class AppDrawerState extends State<AppDrawer>
+    with SingleTickerProviderStateMixin {
   static const Duration _initialDelayTime = Duration(milliseconds: 50);
   static const Duration _itemSlideTime = Duration(milliseconds: 400);
   static const Duration _staggerTime = Duration(milliseconds: 50);
@@ -45,8 +45,10 @@ class AppDrawerState extends State<AppDrawer> with SingleTickerProviderStateMixi
 
   @override
   void initState() {
-    _animationDuration =
-        _initialDelayTime + (_staggerTime * widget.menuList.length) + _buttonDelayTime + _buttonTime;
+    _animationDuration = _initialDelayTime +
+        (_staggerTime * widget.menuList.length) +
+        _buttonDelayTime +
+        _buttonTime;
     _createAnimationIntervals();
 
     _staggeredController = AnimationController(
@@ -123,7 +125,8 @@ class AppDrawerState extends State<AppDrawer> with SingleTickerProviderStateMixi
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         const Spacer(flex: 2),
-                        ..._buildMenuList(menuList: widget.menuList, context: context),
+                        ..._buildMenuList(
+                            menuList: widget.menuList, context: context),
                         const Spacer(flex: 2),
                       ],
                     ),
@@ -142,14 +145,7 @@ class AppDrawerState extends State<AppDrawer> with SingleTickerProviderStateMixi
                     left: Sizes.MARGIN_24,
                     bottom: assignHeight(context, 0.1),
                   ),
-                  child: Align(
-                    alignment: Alignment.bottomLeft,
-                    child: SocialsIconButton(
-                      socialData: Data.socialData,
-                      size: 18,
-                      isHorizontal: false,
-                    ),
-                  ),
+                  child: Align(),
                 ),
               ),
             ],
@@ -201,7 +197,9 @@ class AppDrawerState extends State<AppDrawer> with SingleTickerProviderStateMixi
             route: menuList[index].route,
             title: menuList[index].name,
             isMobile: true,
-            isSelected: widget.selectedItemRouteName == menuList[index].route ? true : false,
+            isSelected: widget.selectedItemRouteName == menuList[index].route
+                ? true
+                : false,
           ),
         ),
       );

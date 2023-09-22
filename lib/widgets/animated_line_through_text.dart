@@ -1,5 +1,5 @@
-import 'package:burak_basci_website/utils/values/values.dart';
 import 'package:flutter/material.dart';
+import 'package:projekt_gruppe_3/utils/values/values.dart';
 
 import 'animations/animated_text_slide_box_transition.dart';
 
@@ -27,7 +27,9 @@ class AnimatedLineThroughText extends StatefulWidget {
     this.beginOffset = const Offset(0, 0),
     this.endOffset = const Offset(0.15, 0),
     this.hasSlideBoxAnimation = false,
-  })  : assert(hasSlideBoxAnimation == true ? controller != null : controller == null),
+  })  : assert(hasSlideBoxAnimation == true
+            ? controller != null
+            : controller == null),
         super(key: key);
 
   final String text;
@@ -133,7 +135,8 @@ class AnimatedLineThroughTextState extends State<AnimatedLineThroughText>
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle? hoverTextStyle = widget.onHoverTextStyle ?? widget.textStyle;
+    final TextStyle? hoverTextStyle =
+        widget.onHoverTextStyle ?? widget.textStyle;
     return InkWell(
       onTap: widget.onTap,
       hoverColor: Colors.transparent,
@@ -209,7 +212,9 @@ class AnimatedLineThroughTextState extends State<AnimatedLineThroughText>
 
   Size _textSize(String text, TextStyle? style) {
     final TextPainter textPainter = TextPainter(
-        text: TextSpan(text: text, style: style), maxLines: 1, textDirection: TextDirection.ltr)
+        text: TextSpan(text: text, style: style),
+        maxLines: 1,
+        textDirection: TextDirection.ltr)
       ..layout(minWidth: 0, maxWidth: double.infinity);
     return textPainter.size;
   }

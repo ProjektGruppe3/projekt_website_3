@@ -8,7 +8,6 @@ import '../../../widgets/animated_line_through_text.dart';
 import '../../utils/values/spaces.dart';
 import '../../widgets/animations/animated_positioned_text.dart';
 import '../../widgets/animations/animated_text_slide_box_transition.dart';
-import '../../widgets/buttons/socials_icon_button.dart';
 import '../../widgets/helper/content_builder.dart';
 import '../../widgets/helper/custom_spacer.dart';
 import '../../widgets/scaffolding/animated_footer.dart';
@@ -331,7 +330,7 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
     );
   }
 
-  List<Widget> _buildSocials(List<SocialData> data) {
+  List<Widget> _buildSocials(List data) {
     final TextTheme textTheme = Theme.of(context).textTheme;
     final TextStyle? style =
         textTheme.bodyText1?.copyWith(color: AppColors.grey750);

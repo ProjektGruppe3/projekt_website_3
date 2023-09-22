@@ -4,11 +4,7 @@ import 'package:visibility_detector/visibility_detector.dart';
 
 import '../../../utils/adaptive_layout.dart';
 import '../../../utils/values/values.dart';
-import '../../pages/contact/contact_page.dart';
 import '../../utils/values/spaces.dart';
-import '../animations/animated_bubble_button.dart';
-import '../animations/animated_positioned_text.dart';
-import '../animations/animated_positioned_widget.dart';
 import 'simple_footer.dart';
 
 class AnimatedFooter extends StatefulWidget {
@@ -27,7 +23,8 @@ class AnimatedFooter extends StatefulWidget {
   AnimatedFooterState createState() => AnimatedFooterState();
 }
 
-class AnimatedFooterState extends State<AnimatedFooter> with SingleTickerProviderStateMixin {
+class AnimatedFooterState extends State<AnimatedFooter>
+    with SingleTickerProviderStateMixin {
   late AnimationController controller;
 
   @override
@@ -47,27 +44,7 @@ class AnimatedFooterState extends State<AnimatedFooter> with SingleTickerProvide
 
   @override
   Widget build(BuildContext context) {
-    final double circleImageSize = responsiveSize(context, 150, 200);
-    final double footerheight = assignHeight(context, 0.54) <= 420? 420: assignHeight(context, 0.54);
-    final TextTheme textTheme = Theme.of(context).textTheme;
-    final TextStyle? style = textTheme.bodyText1?.copyWith(
-      color: AppColors.accentColor,
-      fontSize: Sizes.TEXT_SIZE_14,
-    );
-    final TextStyle? titleStyle = textTheme.headline4?.copyWith(
-      color: AppColors.accentColor,
-      fontSize: responsiveSize(
-        context,
-        Sizes.TEXT_SIZE_30,
-        Sizes.TEXT_SIZE_64,
-        medium: Sizes.TEXT_SIZE_50,
-      ),
-    );
-    final TextStyle? subtitleStyle = style?.copyWith(
-      color: AppColors.grey550,
-      fontSize: Sizes.TEXT_SIZE_18,
-      fontWeight: FontWeight.w400,
-    );
+    final double footerheight = 100;
 
     return Container(
       width: widget.width ?? widthOfScreen(context),
@@ -84,70 +61,13 @@ class AnimatedFooterState extends State<AnimatedFooter> with SingleTickerProvide
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            const Spacer(),
-            SizedBox(
-              height: circleImageSize,
-              child: Stack(
-                children: <Widget>[
-                  Positioned(
-                    right: responsiveSize(
-                      context,
-                      assignWidth(context, 0.2),
-                      assignWidth(context, 0.2),
-                      medium: assignWidth(context, 0.2),
-                    ),
-                    child: AnimatedPositionedWidget(
-                      controller: CurvedAnimation(
-                        parent: controller,
-                        curve: Curves.fastOutSlowIn,
-                      ),
-                      width: circleImageSize,
-                      height: circleImageSize,
-                      child: Image.asset(
-                        ImagePath.CIRCLE,
-                        color: AppColors.white,
-                      ),
-                    ),
-                  ),
-                  Center(
-                    child: AnimatedPositionedText(
-                      text: StringConst.WORK_TOGETHER,
-                      textAlign: TextAlign.center,
-                      textStyle: titleStyle,
-                      controller: CurvedAnimation(
-                        parent: controller,
-                        curve: Curves.fastOutSlowIn,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            // Spacer(),
-            AnimatedPositionedText(
-              text: StringConst.AVAILABLE_FOR_FREELANCE,
-              textAlign: TextAlign.center,
-              textStyle: subtitleStyle,
-              factor: 2.0,
-              controller: CurvedAnimation(
-                parent: controller,
-                curve: Curves.fastOutSlowIn,
-              ),
-            ),
-            const SpaceH40(),
-            AnimatedBubbleButton(
-              title: StringConst.SAY_HELLO.toUpperCase(),
-              onTap: () {
-                Navigator.pushNamed(context, ContactPage.contactPageRoute);
-              },
-            ),
-            const Spacer(flex: 3),
             ResponsiveBuilder(
               builder: (context, sizingInformation) {
                 final double screenWidth = sizingInformation.screenSize.width;
                 if (screenWidth <= const RefinedBreakpoints().tabletNormal) {
                   return const Column(
                     children: <Widget>[
+                      SpaceH8(),
                       SimpleFooterSmall(),
                       SpaceH8(),
                     ],
@@ -155,6 +75,7 @@ class AnimatedFooterState extends State<AnimatedFooter> with SingleTickerProvide
                 } else {
                   return const Column(
                     children: <Widget>[
+                      SpaceH8(),
                       SimpleFooterLarge(),
                       SpaceH8(),
                     ],

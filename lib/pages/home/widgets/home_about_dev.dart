@@ -1,5 +1,5 @@
-import 'package:burak_basci_website/pages/about/about_page.dart';
 import 'package:flutter/material.dart';
+import 'package:projekt_gruppe_3/pages/about/about_page.dart';
 
 import '../../../../utils/adaptive_layout.dart';
 import '../../../../utils/functions.dart';
@@ -9,7 +9,6 @@ import '../../../widgets/animations/animated_bubble_button.dart';
 import '../../../widgets/animations/animated_positioned_text.dart';
 import '../../../widgets/animations/animated_positioned_widget.dart';
 import '../../../widgets/animations/animated_text_slide_box_transition.dart';
-import '../../../widgets/buttons/socials_icon_button.dart';
 
 class HomeAboutDev extends StatefulWidget {
   const HomeAboutDev({
@@ -36,7 +35,8 @@ class HomeAboutDevState extends State<HomeAboutDev> {
     );
     final double headerFontSize =
         responsiveSize(context, 28, 48, medium: 36, small: 32);
-    return Column(mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
@@ -142,7 +142,7 @@ class HomeAboutDevState extends State<HomeAboutDev> {
 
   List<Widget> _buildSocials({
     required BuildContext context,
-    required List<SocialData> data,
+    required data,
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
     final TextStyle? style =

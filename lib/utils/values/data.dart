@@ -108,24 +108,6 @@ class Data {
         name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
   ];
 
-  static List<SocialData> socialData = <SocialData>[
-    SocialData(
-      name: StringConst.GITHUB,
-      iconData: FontAwesomeIcons.github,
-      url: StringConst.GITHUB_URL,
-    ),
-    SocialData(
-      name: StringConst.LINKED_IN,
-      iconData: FontAwesomeIcons.linkedin,
-      url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.PINTEREST,
-      iconData: FontAwesomeIcons.pinterest,
-      url: StringConst.PINTEREST_URL,
-    ),
-  ];
-
   static List<String> programmingLanguages = <String>[
     "Dart",
     "Flutter",

@@ -7,7 +7,6 @@ import '../../../utils/functions.dart';
 import '../../../utils/values/values.dart';
 import '../../utils/values/spaces.dart';
 import '../animated_line_through_text.dart';
-import '../buttons/socials_icon_button.dart';
 
 class SimpleFooter extends StatelessWidget {
   const SimpleFooter({
@@ -68,8 +67,6 @@ class SimpleFooterSmall extends StatelessWidget {
     );
     return Column(
       children: <Widget>[
-        SocialsIconButton(socialData: Data.socialData),
-        const SpaceH30(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -139,9 +136,7 @@ class SimpleFooterLarge extends StatelessWidget {
       children: <Widget>[
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            SocialsIconButton(socialData: Data.socialData),
-          ],
+          children: <Widget>[],
         ),
         const SpaceH20(),
         Row(
