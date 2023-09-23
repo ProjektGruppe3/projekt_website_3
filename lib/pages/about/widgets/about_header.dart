@@ -43,7 +43,7 @@ class AboutHeader extends StatelessWidget {
               ),
               const SpaceH30(),
               ClipRRect(
-                borderRadius: BorderRadius.circular(80),
+                borderRadius: BorderRadius.circular(40),
                 child: Image.asset(
                   ImagePath.DEV,
                   fit: BoxFit.cover,
@@ -65,7 +65,7 @@ class AboutHeader extends StatelessWidget {
                 width: spacing,
               ),
               ClipRRect(
-                borderRadius: BorderRadius.circular(80.0),
+                borderRadius: BorderRadius.circular(40.0),
                 child: ConstrainedBox(
                   constraints: BoxConstraints(
                     maxWidth: imageWidthLarge,

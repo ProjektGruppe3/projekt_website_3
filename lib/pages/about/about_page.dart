@@ -157,10 +157,7 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                 VisibilityDetector(
                   key: const Key('story-section'),
                   onVisibilityChanged: (visibilityInfo) {
-                    if (visibilityInfo.visibleFraction * 100 >
-                        responsiveSize(context, 40, 70, medium: 50)) {
-                      _storyController.forward();
-                    }
+                    _storyController.forward();
                   },
                   child: ContentBuilder(
                     controller: _storyController,
@@ -170,6 +167,19 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     title: StringConst.Beschreibungs_Titel,
                     body: Column(
                       children: <Widget>[
+                        SizedBox(
+                          height: 400,
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                ImagePath.Transport,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
                         AnimatedPositionedText(
                           controller: storySectionAnimation,
                           width: widthOfBody,
@@ -212,17 +222,50 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     width: contentAreaWidth,
                     section: StringConst.Problematik_Beschreibung.toUpperCase(),
                     title: StringConst.Problematikabschnitt,
-                    body: Column(
-                      children: <Widget>[
-                        AnimatedPositionedText(
-                          controller: technologySectionAnimation,
-                          width: widthOfBody,
-                          maxLines: 12,
-                          text: StringConst.Problematik_Inhalt,
-                          textStyle: bodyText1Style,
-                        ),
-                      ],
-                    ),
+                    body: LayoutBuilder(builder: (context, constraint) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: constraint.maxWidth * 0.5,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    child: Image.asset(
+                                      ImagePath.Problematik,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: constraint.maxWidth * 0.5,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(16.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    child: Image.asset(
+                                      ImagePath.Aufsetzen,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          AnimatedPositionedText(
+                            controller: technologySectionAnimation,
+                            width: widthOfBody,
+                            maxLines: 12,
+                            text: StringConst.Problematik_Inhalt,
+                            textStyle: bodyText1Style,
+                          ),
+                        ],
+                      );
+                    }),
                     // footer: VisibilityDetector(
                     //   key: const Key('technology-list'),
                     //   onVisibilityChanged: (visibilityInfo) {
@@ -258,6 +301,19 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     title: StringConst.ABOUT_DEV_CONTACT_SOCIAL,
                     body: Column(
                       children: <Widget>[
+                        SizedBox(
+                          height: 400,
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(20.0),
+                              child: Image.asset(
+                                ImagePath.Loesung,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
                         AnimatedPositionedText(
                           controller: technologySectionAnimation,
                           width: widthOfBody,

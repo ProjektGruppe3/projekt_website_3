@@ -12,6 +12,23 @@ class ImagePath {
   static const String DEV = "$imageDir/aufbau.jpg";
   static const String CAESAR = "$imageDir/caesar.png";
 
+  // Project Bilder
+  static const String Transport = "$imageDir/Transport.png";
+  static const String Problematik = "$imageDir/Problematik.jpg";
+  static const String Loesung = "$imageDir/Lösung.png";
+  static const String Aufsetzen = "$imageDir/Aufsetzen.png";
+  // Team Bilder
+  static const String Gruppenfoto = "$imageDir/Brock Kehrtechnik GmbH.png";
+  static const String DanielGramsfoto = "$imageDir/Daniel Grams.jpg";
+  static const String NiklasBenskifoto = "$imageDir/Niklas Benski.jpg";
+  static const String JurijKuvaevfoto = "$imageDir/Jurij Kuvaev.png";
+  //
+  // ProjektPartner Bilder
+  static const String FirmenfotoBrock = "$imageDir/Brock Kehrtechnik GmbH.png";
+  static const String Produktpalette1 = "$imageDir/Produktpalette 1.png";
+  static const String Produktpalette2 = "$imageDir/Produktpalette 2.png";
+  //
+
   static const String VYBZ = "$imageDir/vybz.jpg";
   static const String DAVID = "$imageDir/david.png";
   static const String COLOSSAL_TOONS = "$imageDir/colossal_toons.jpg";
