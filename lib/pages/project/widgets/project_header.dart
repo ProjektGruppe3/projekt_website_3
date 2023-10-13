@@ -4,7 +4,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../utils/adaptive_layout.dart';
 import '../../../../utils/values/values.dart';
 import '../../../utils/values/spaces.dart';
-import 'about_header_description.dart';
+import 'project_header_description.dart';
 
 class AboutHeader extends StatelessWidget {
   const AboutHeader({

@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../utils/adaptive_layout.dart';
-import '../../../utils/functions.dart';
 import '../../../utils/values/values.dart';
+import '../../utils/functions.dart';
 import '../../utils/values/spaces.dart';
 import '../animated_line_through_text.dart';
 

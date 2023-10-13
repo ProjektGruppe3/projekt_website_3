@@ -10,7 +10,7 @@ class AnimatedTextSlideBoxTransition extends StatefulWidget {
     required this.text,
     required this.textStyle,
     this.width = double.infinity,
-    this.maxLines = 3,
+    this.maxLines = 1,
     this.widthFactor = 1,
     this.heightFactor = 1,
     this.visibleBoxAnimation,
@@ -43,12 +43,10 @@ class AnimatedTextSlideBoxTransition extends StatefulWidget {
   final int maxLines;
 
   @override
-  AnimatedTextSlideBoxTransitionState createState() =>
-      AnimatedTextSlideBoxTransitionState();
+  AnimatedTextSlideBoxTransitionState createState() => AnimatedTextSlideBoxTransitionState();
 }
 
-class AnimatedTextSlideBoxTransitionState
-    extends State<AnimatedTextSlideBoxTransition>
+class AnimatedTextSlideBoxTransitionState extends State<AnimatedTextSlideBoxTransition>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
   late Animation<double> visibleAnimation;

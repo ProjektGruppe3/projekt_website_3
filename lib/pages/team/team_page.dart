@@ -101,7 +101,7 @@ class ExperiencePageState extends State<ExperiencePage> with TickerProviderState
 
     return PageWrapper(
       selectedRoute: ExperiencePage.experiencePageRoute,
-      selectedPageName: StringConst.EXPERIENCE,
+      selectedPageName: StringConst.TEAM,
       navigationBarAnimationController: _controller,
       onLoadingAnimationDone: () {
         _controller.forward();
@@ -115,7 +115,7 @@ class ExperiencePageState extends State<ExperiencePage> with TickerProviderState
         children: <Widget>[
           DefaultPageHeader(
             scrollController: _scrollController,
-            headingText: StringConst.EXPERIENCE,
+            headingText: StringConst.TEAM,
             headingTextController: _controller,
           ),
           Padding(

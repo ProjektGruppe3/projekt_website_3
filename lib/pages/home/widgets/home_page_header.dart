@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:layout/layout.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -209,33 +210,6 @@ class HomePageHeaderState extends State<HomePageHeader> with TickerProviderState
             ),
           ),
 
-          /// Caesar Image
-
-          Positioned(
-            right: screenWidth * 0.08 - 20,
-            bottom: 20 + screenWidth * 0.03,
-            child: AnimatedSlideTransition(
-              controller: controller,
-              position: imageAnimation,
-              child: LayoutBuilder(
-                builder: (context, constraints) {
-                  double size;
-
-                  if (screenWidth > screenHeight) {
-                    size = screenHeight * 0.44;
-                  } else {
-                    size = screenWidth * 0.44;
-                  }
-                  return Image.asset(
-                    ImagePath.CAESAR,
-                    fit: BoxFit.cover,
-                    width: size,
-                  );
-                },
-              ),
-            ),
-          ),
-
           /// About Dev Text
           Positioned(
             left: 0,
@@ -249,6 +223,86 @@ class HomePageHeaderState extends State<HomePageHeader> with TickerProviderState
                   width: screenWidth,
                 ),
               ),
+            ),
+          ),
+
+          /// Presentation Image
+          Positioned(
+            right: screenWidth * 0.08 - 20,
+            bottom: 20 + screenWidth * 0.03,
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                double size;
+
+                if (screenWidth > screenHeight) {
+                  size = screenHeight * 0.30;
+                } else {
+                  size = screenWidth * 0.30;
+                }
+
+                return SizedBox(
+                  width: size,
+                  height: size,
+                  child: Center(
+                    child: InkWell(
+                      onTap: () {
+                        /// GetX Popup
+                        Get.dialog(
+                          AlertDialog(
+                            title: const Text('Projektpräsentation'),
+                            content: const Text(
+                              'Wann?\n  08.10.2024 um 8:00 Uhr\n\nWo?\n  An der TBS1 Ostring 25, 44787 Bochum, in der Aula',
+                              style: TextStyle(fontWeight: FontWeight.normal),
+                            ),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () {
+                                  Get.back();
+                                },
+                                child: const Text(
+                                  'OK',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                      child: Card(
+                        elevation: 8,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: const Padding(
+                          padding: EdgeInsets.all(20.0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Text(
+                                'Projektpräsentation',
+                                style: TextStyle(
+                                  fontSize: 24,
+                                ),
+                              ),
+                              Text(
+                                'am 08.10.2024',
+                                style: TextStyle(
+                                  fontSize: 24,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+                // return Image.asset(
+                //   ImagePath.CAESAR,-
+                //   fit: BoxFit.cover,
+                //   width: size,
+                // );
+              },
             ),
           ),
 

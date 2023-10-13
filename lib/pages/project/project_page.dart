@@ -2,17 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 import '../../../utils/adaptive_layout.dart';
-import '../../../utils/functions.dart';
 import '../../../utils/values/values.dart';
-import '../../../widgets/animated_line_through_text.dart';
-import '../../utils/values/spaces.dart';
 import '../../widgets/animations/animated_positioned_text.dart';
-import '../../widgets/animations/animated_text_slide_box_transition.dart';
 import '../../widgets/helper/content_builder.dart';
 import '../../widgets/helper/custom_spacer.dart';
 import '../../widgets/scaffolding/animated_footer.dart';
+import '../../widgets/scaffolding/default_page_header.dart';
 import '../../widgets/scaffolding/page_wrapper.dart';
-import 'widgets/about_header.dart';
+import 'widgets/project_header.dart';
 
 class AboutPage extends StatefulWidget {
   static const String aboutPageRoute = StringConst.ABOUT_PAGE;
@@ -25,6 +22,8 @@ class AboutPage extends StatefulWidget {
 }
 
 class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
+  final ScrollController _scrollController = ScrollController();
+
   late AnimationController _controller;
   late AnimationController _storyController;
   late AnimationController _technologyController;
@@ -109,16 +108,6 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
       height: 2.0,
       // letterSpacing: 2,
     );
-    final TextStyle? bodyText2Style =
-        textTheme.bodyText1?.copyWith(color: AppColors.grey750);
-    final TextStyle? titleStyle = textTheme.subtitle1?.copyWith(
-      color: AppColors.black,
-      fontSize: responsiveSize(
-        context,
-        Sizes.TEXT_SIZE_16,
-        Sizes.TEXT_SIZE_20,
-      ),
-    );
     final CurvedAnimation storySectionAnimation = CurvedAnimation(
       parent: _storyController,
       curve: const Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
@@ -140,11 +129,17 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
         _controller.forward();
       },
       child: ListView(
+        controller: _scrollController,
         padding: EdgeInsets.zero,
         physics: const BouncingScrollPhysics(
           parent: AlwaysScrollableScrollPhysics(),
         ),
         children: <Widget>[
+          DefaultPageHeader(
+            scrollController: _scrollController,
+            headingText: StringConst.PROJEKT,
+            headingTextController: _controller,
+          ),
           Padding(
             padding: padding,
             child: Column(
@@ -325,55 +320,6 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
                     ),
                   ),
                 ),
-                const CustomSpacer(heightFactor: 0.1),
-                VisibilityDetector(
-                  key: const Key('quote-section'),
-                  onVisibilityChanged: (visibilityInfo) {
-                    double visiblePercentage =
-                        visibilityInfo.visibleFraction * 100;
-                    if (visiblePercentage > 50) {
-                      _quoteController.forward();
-                    }
-                  },
-                  child: Column(
-                    children: <Widget>[
-                      AnimatedTextSlideBoxTransition(
-                        controller: _quoteController,
-                        text: StringConst.FAMOUS_QUOTE,
-                        maxLines: 5,
-                        width: contentAreaWidth,
-                        textAlign: TextAlign.center,
-                        textStyle: titleStyle?.copyWith(
-                          fontSize: responsiveSize(
-                            context,
-                            Sizes.TEXT_SIZE_24,
-                            Sizes.TEXT_SIZE_36,
-                            medium: Sizes.TEXT_SIZE_28,
-                          ),
-                          height: 2.0,
-                        ),
-                      ),
-                      const SpaceH20(),
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: AnimatedTextSlideBoxTransition(
-                          controller: _quoteController,
-                          text: "— ${StringConst.FAMOUS_QUOTE_AUTHOR}",
-                          textStyle: textTheme.bodyText1?.copyWith(
-                            fontSize: responsiveSize(
-                              context,
-                              Sizes.TEXT_SIZE_16,
-                              Sizes.TEXT_SIZE_18,
-                              medium: Sizes.TEXT_SIZE_16,
-                            ),
-                            fontWeight: FontWeight.w400,
-                            color: AppColors.grey600,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
                 const CustomSpacer(heightFactor: 0.2),
               ],
             ),
@@ -384,41 +330,5 @@ class AboutPageState extends State<AboutPage> with TickerProviderStateMixin {
         ],
       ),
     );
-  }
-
-  List<Widget> _buildSocials(List data) {
-    final TextTheme textTheme = Theme.of(context).textTheme;
-    final TextStyle? style =
-        textTheme.bodyText1?.copyWith(color: AppColors.grey750);
-    final TextStyle? slashStyle = textTheme.bodyText1?.copyWith(
-      color: AppColors.grey750,
-      fontWeight: FontWeight.w400,
-      fontSize: 18,
-    );
-    final List<Widget> items = <Widget>[];
-
-    for (int index = 0; index < data.length; index++) {
-      items.add(
-        AnimatedLineThroughText(
-          text: data[index].name,
-          isUnderlinedByDefault: true,
-          controller: _contactController,
-          hasSlideBoxAnimation: true,
-          isUnderlinedOnHover: false,
-          onTap: () {
-            Functions.launchUrl(data[index].url);
-          },
-          textStyle: style,
-        ),
-      );
-
-      if (index < data.length - 1) {
-        items.add(
-          Text('/', style: slashStyle),
-        );
-      }
-    }
-
-    return items;
   }
 }
