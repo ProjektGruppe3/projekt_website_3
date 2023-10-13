@@ -126,7 +126,7 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   AnimatedTextSlideBoxTransition(
                     controller: _recentWorksController,
                     text: StringConst.Website_Into,
-                    maxLines: 5,
+                    maxLines: 3,
                     width: responsiveSize(
                       context,
                       assignWidth(context, 0.80),
@@ -143,8 +143,7 @@ class HomePageState extends State<HomePage> with TickerProviderStateMixin {
               ),
             ),
           ),
-          const CustomSpacer(heightFactor: 0.1),
-          const CustomSpacer(heightFactor: 0.15),
+          const CustomSpacer(heightFactor: 0.2),
           const AnimatedFooter(),
         ],
       ),

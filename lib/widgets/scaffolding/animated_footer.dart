@@ -23,8 +23,7 @@ class AnimatedFooter extends StatefulWidget {
   AnimatedFooterState createState() => AnimatedFooterState();
 }
 
-class AnimatedFooterState extends State<AnimatedFooter>
-    with SingleTickerProviderStateMixin {
+class AnimatedFooterState extends State<AnimatedFooter> with SingleTickerProviderStateMixin {
   late AnimationController controller;
 
   @override
@@ -44,7 +43,7 @@ class AnimatedFooterState extends State<AnimatedFooter>
 
   @override
   Widget build(BuildContext context) {
-    final double footerheight = 100;
+    final double footerheight = 140;
 
     return Container(
       width: widget.width ?? widthOfScreen(context),

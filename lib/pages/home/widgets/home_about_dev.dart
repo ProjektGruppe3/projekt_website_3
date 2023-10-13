@@ -131,7 +131,7 @@ class HomeAboutDevState extends State<HomeAboutDev> {
             ),
             onTap: () {
               // TODO: Reimplement when WorksPage is ready
-              Navigator.pushNamed(context, AboutPage.aboutPageRoute);
+              Navigator.pushNamed(context, ProjectPage.aboutPageRoute);
             },
           ),
         ),

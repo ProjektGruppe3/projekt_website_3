@@ -3,25 +3,26 @@ import 'package:visibility_detector/visibility_detector.dart';
 
 import '../../../utils/adaptive_layout.dart';
 import '../../../utils/values/values.dart';
+import '../../utils/functions.dart';
+import '../../widgets/animated_line_through_text.dart';
 import '../../widgets/animations/animated_positioned_text.dart';
 import '../../widgets/helper/content_builder.dart';
 import '../../widgets/helper/custom_spacer.dart';
 import '../../widgets/scaffolding/animated_footer.dart';
 import '../../widgets/scaffolding/default_page_header.dart';
 import '../../widgets/scaffolding/page_wrapper.dart';
-import 'widgets/project_header.dart';
 
-class ProjectPage extends StatefulWidget {
-  static const String aboutPageRoute = StringConst.ABOUT_PAGE;
-  const ProjectPage({
+class CollaboratorsPage extends StatefulWidget {
+  static const String collaboratorsPageRoute = StringConst.CONTACT_PAGE;
+  const CollaboratorsPage({
     Key? key,
   }) : super(key: key);
 
   @override
-  ProjectPageState createState() => ProjectPageState();
+  CollaboratorsPageState createState() => CollaboratorsPageState();
 }
 
-class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin {
+class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
 
   late AnimationController _controller;
@@ -122,7 +123,7 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
       assignWidth(context, 0.5),
     );
     return PageWrapper(
-      selectedRoute: ProjectPage.aboutPageRoute,
+      selectedRoute: CollaboratorsPage.collaboratorsPageRoute,
       selectedPageName: StringConst.ABOUT,
       navigationBarAnimationController: _controller,
       onLoadingAnimationDone: () {
@@ -137,18 +138,13 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
         children: <Widget>[
           DefaultPageHeader(
             scrollController: _scrollController,
-            headingText: StringConst.PROJEKT,
+            headingText: StringConst.COLLABORATORS,
             headingTextController: _controller,
           ),
           Padding(
             padding: padding,
             child: Column(
               children: <Widget>[
-                ProjectHeader(
-                  width: contentAreaWidth,
-                  controller: _controller,
-                ),
-                const CustomSpacer(heightFactor: 0.1),
                 VisibilityDetector(
                   key: const Key('story-section'),
                   onVisibilityChanged: (visibilityInfo) {
@@ -170,7 +166,7 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(16.0),
                               child: Image.asset(
-                                ImagePath.Transport,
+                                ImagePath.FirmenfotoBrock,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -223,34 +219,50 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Row(
-                            children: [
+                            children: <Widget>[
                               SizedBox(
-                                width: constraint.maxWidth * 0.5,
+                                width: constraint.maxWidth * 0.475,
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(16.0),
                                     child: Image.asset(
-                                      ImagePath.Problematik,
+                                      ImagePath.Produktpalette1,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                               ),
                               SizedBox(
-                                width: constraint.maxWidth * 0.5,
+                                width: constraint.maxWidth * 0.525,
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(16.0),
                                     child: Image.asset(
-                                      ImagePath.Aufsetzen,
+                                      ImagePath.Produktpalette2,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                               ),
                             ],
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Functions.launchUrl('https://www.brock-kehrtechnik.de/de/');
+                            },
+                            child: AnimatedLineThroughText(
+                              text: 'www.brock-kehrtechnik.de',
+                              isUnderlinedByDefault: true,
+                              isUnderlinedOnHover: false,
+                              hoverColor: AppColors.white,
+                              coverColor: AppColors.black,
+                              textStyle: textTheme.bodyText1?.copyWith(
+                                fontSize: Sizes.TEXT_SIZE_18,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
                           ),
                           AnimatedPositionedText(
                             controller: technologySectionAnimation,
@@ -262,63 +274,6 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
                         ],
                       );
                     }),
-                    // footer: VisibilityDetector(
-                    //   key: const Key('technology-list'),
-                    //   onVisibilityChanged: (visibilityInfo) {
-                    //     if (visibilityInfo.visibleFraction * 100 > 60) {
-                    //       _technologyListController.forward();
-                    //     }
-                    //   },
-                    //   child: Column(
-                    //     children: <Widget>[
-                    //       const SpaceH40(),
-                    //       TechnologySection(
-                    //         width: contentAreaWidth,
-                    //         controller: _technologyListController,
-                    //       ),
-                    //     ],
-                    //   ),
-                    // ),
-                  ),
-                ),
-                const CustomSpacer(heightFactor: 0.1),
-                VisibilityDetector(
-                  key: const Key('contact-section'),
-                  onVisibilityChanged: (visibilityInfo) {
-                    if (visibilityInfo.visibleFraction * 100 > 50) {
-                      _contactController.forward();
-                    }
-                  },
-                  child: ContentBuilder(
-                    controller: _contactController,
-                    number: "/03 ",
-                    width: contentAreaWidth,
-                    section: StringConst.Loesungsansatz.toUpperCase(),
-                    title: StringConst.ABOUT_DEV_CONTACT_SOCIAL,
-                    body: Column(
-                      children: <Widget>[
-                        SizedBox(
-                          height: 400,
-                          child: Padding(
-                            padding: const EdgeInsets.all(16.0),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(16.0),
-                              child: Image.asset(
-                                ImagePath.Loesung,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                        ),
-                        AnimatedPositionedText(
-                          controller: technologySectionAnimation,
-                          width: widthOfBody,
-                          maxLines: 12,
-                          text: StringConst.Loesungsinhalt,
-                          textStyle: bodyText1Style,
-                        ),
-                      ],
-                    ),
                   ),
                 ),
                 const CustomSpacer(heightFactor: 0.2),

@@ -12,17 +12,17 @@ import '../../widgets/scaffolding/animated_footer.dart';
 import '../../widgets/scaffolding/default_page_header.dart';
 import '../../widgets/scaffolding/page_wrapper.dart';
 
-class ExperiencePage extends StatefulWidget {
+class TeamPage extends StatefulWidget {
   static const String experiencePageRoute = StringConst.EXPERIENCE_PAGE;
-  const ExperiencePage({
+  const TeamPage({
     Key? key,
   }) : super(key: key);
 
   @override
-  ExperiencePageState createState() => ExperiencePageState();
+  TeamPageState createState() => TeamPageState();
 }
 
-class ExperiencePageState extends State<ExperiencePage> with TickerProviderStateMixin {
+class TeamPageState extends State<TeamPage> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
 
   late AnimationController _controller;
@@ -100,7 +100,7 @@ class ExperiencePageState extends State<ExperiencePage> with TickerProviderState
     );
 
     return PageWrapper(
-      selectedRoute: ExperiencePage.experiencePageRoute,
+      selectedRoute: TeamPage.experiencePageRoute,
       selectedPageName: StringConst.TEAM,
       navigationBarAnimationController: _controller,
       onLoadingAnimationDone: () {
@@ -170,7 +170,7 @@ class ExperiencePageState extends State<ExperiencePage> with TickerProviderState
               children: <Widget>[
                 AnimatedTextSlideBoxTransition(
                   controller: _experienceControllers[index],
-                  text: data[index].company,
+                  text: data[index].name,
                   textStyle: defaultTitleStyle,
                 ),
                 const SpaceH16(),
@@ -188,14 +188,27 @@ class ExperiencePageState extends State<ExperiencePage> with TickerProviderState
                 ),
               ],
             ),
-            body: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: _buildRoles(
-                roles: data[index].roles,
-                controller: _experienceControllers[index],
-                width: width * 0.75,
+            body: SizedBox(
+              height: 400,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(16.0),
+                  child: Image.asset(
+                    data[index].image!,
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
             ),
+            // Column(
+            //   crossAxisAlignment: CrossAxisAlignment.start,
+            //   children: _buildRoles(
+            //     roles: data[index].roles,
+            //     controller: _experienceControllers[index],
+            //     width: width * 0.75,
+            //   ),
+            // ),
           ),
         ),
       );

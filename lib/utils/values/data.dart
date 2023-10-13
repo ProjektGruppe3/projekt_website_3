@@ -46,22 +46,32 @@ class NoteWorthyProjectDetails {
   final String? technologyUsed;
 }
 
+class ImprintData {
+  ImprintData({
+    this.title,
+    required this.content,
+  });
+
+  final String? title;
+  final String content;
+}
+
 class ExperienceData {
   ExperienceData({
     required this.duration,
-    required this.company,
+    required this.name,
     required this.position,
     required this.roles,
     required this.location,
-    this.companyUrl,
+    this.image,
   });
 
   final String duration;
-  final String company;
+  final String name;
   final String position;
   final List<String> roles;
   final String? location;
-  final String? companyUrl;
+  final String? image;
 }
 
 class SkillData {
@@ -220,42 +230,48 @@ class Data {
 
   static List<ExperienceData> experienceData = <ExperienceData>[
     ExperienceData(
-      company: StringConst.Name,
-      position: StringConst.Ausbildung,
-      companyUrl: StringConst.COMPANY_4_URL,
+      name: StringConst.Name,
+      position: StringConst.COMPANY_4_POSITION,
+      image: ImagePath.DanielGramsfoto,
       roles: <String>[
-        StringConst.Alter,
-        StringConst.COMPANY_4_ROLE_2,
-        StringConst.COMPANY_4_ROLE_3,
-        StringConst.COMPANY_4_ROLE_4,
-        StringConst.COMPANY_4_ROLE_5,
+        // StringConst.COMPANY_4_ROLE_1,
+        // StringConst.COMPANY_4_ROLE_2,
+        // StringConst.COMPANY_4_ROLE_3,
+        // StringConst.COMPANY_4_ROLE_4,
+        // StringConst.COMPANY_4_ROLE_5,
       ],
       location: StringConst.COMPANY_4_LOCATION,
       duration: StringConst.Name_Seitenleiste,
     ),
     ExperienceData(
-      company: StringConst.COMPANY_3,
+      name: StringConst.COMPANY_3,
       position: StringConst.COMPANY_3_POSITION,
-      companyUrl: StringConst.COMPANY_3_URL,
+      image: ImagePath.NiklasBenskifoto,
       roles: <String>[
-        StringConst.COMPANY_3_ROLE_1,
-        StringConst.COMPANY_3_ROLE_2,
-        StringConst.COMPANY_3_ROLE_3,
+        // StringConst.COMPANY_3_ROLE_1,
+        // StringConst.COMPANY_3_ROLE_2,
+        // StringConst.COMPANY_3_ROLE_3,
       ],
       location: StringConst.COMPANY_3_LOCATION,
       duration: StringConst.COMPANY_3_DURATION,
     ),
     ExperienceData(
-      company: StringConst.COMPANY_2,
+      name: StringConst.COMPANY_2,
       position: StringConst.COMPANY_2_POSITION,
-      companyUrl: StringConst.COMPANY_2_URL,
+      image: ImagePath.JurijKuvaevfoto,
       roles: <String>[
-        StringConst.COMPANY_2_ROLE_1,
-        StringConst.COMPANY_2_ROLE_2,
-        StringConst.COMPANY_2_ROLE_3,
+        // StringConst.COMPANY_2_ROLE_1,
+        // StringConst.COMPANY_2_ROLE_2,
+        // StringConst.COMPANY_2_ROLE_3,
       ],
       location: StringConst.COMPANY_2_LOCATION,
       duration: StringConst.COMPANY_2_DURATION,
     ),
+  ];
+
+  static final List<ImprintData> imprintData = <ImprintData>[
+    ImprintData(title: 'Imprint', content: 'Wallbaumweg 16\n44894 Bochum'),
+    ImprintData(content: 'Deutschland'),
+    ImprintData(title: 'asd', content: StringConst.IMPRINT_Line),
   ];
 }

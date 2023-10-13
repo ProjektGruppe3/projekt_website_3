@@ -13,12 +13,14 @@ class StringConst {
   static const String WORK = "Work";
   static const String TEAM = "Das Team";
   static const String PROJEKT = "Das Projekt";
+  static const String COLLABORATORS = "BROCK";
   static const String PROJECT = "Projekt";
   static const String WHERE_WORKED = "Where I've Worked";
   static const String SERVICES = "Services";
   static const String CONTACT = "Projektpartner";
   static const String PHONE_NUMBER = "Phone Number";
   static const String RESUME = "Resume";
+  static const String IMPRINT = "Impressum";
   // static const String CERTIFICATIONS = "Certifications";
 
   /// routes
@@ -26,14 +28,20 @@ class StringConst {
   static const String HOME_PAGE = "/home";
   static const String ABOUT_PAGE = "/about";
   static const String WORK_PAGE = "/work";
-  static const String CONTACT_PAGE = "/contact";
+  static const String CONTACT_PAGE = "/collaborators";
   static const String PROJECT_PAGE = "/project";
   static const String PROJECT_DETAIL_PAGE = "/project-detail";
   static const String SERVICES_PAGE = "/services";
   static const String MESSAGE_PAGE = "/message-me";
   static const String EXPERIENCE_PAGE = "/experience";
   static const String RESUME_PAGE = "/resume";
+  static const String IMPRINT_PAGE = "/imprint";
   // static const String CERTIFICATION_PAGE = "/certifications";
+
+  ///
+  /// Imprint Page
+  ///
+  static const String IMPRINT_Line = "test";
 
   ///
   /// Home Page
@@ -52,8 +60,9 @@ class StringConst {
   static const String VIEW_ALL_PROJECTS = "view all projects";
 
   ///
-  /// Contact Page
+  /// Collaborators Page
   ///
+
   static const String GET_IN_TOUCH = "Get in touch.";
   static const String CONTACT_MSG =
       "Hey there, got a project, job offer or consulting work for me? Feel free to contact me.";
@@ -78,7 +87,7 @@ class StringConst {
       "Something went wrong. Please send me an email manually - ${StringConst.DEV_EMAIL}";
 
   ///
-  /// About Page
+  /// Project Page
   ///
   static const String ABOUT_DEV_CATCH_LINE_1 =
       "Im Rahmen der Weiterbildung zum Staatlich geprüften Techniker, in der Fachrichtung Maschinenbautechnik, an der Technischen Beruflichen Schule 1 in Bochum ist eine einjährige Projektarbeit durchzuführen.";
@@ -373,60 +382,55 @@ class StringConst {
   ///
 
   //
-  static const String COMPANY_2_DURATION = "Sept 2019 - Oct 2019";
-  static const String COMPANY_2 = "Intern - IMA Schelling GmbH";
+  static const String COMPANY_2_DURATION = "Jurij Kuvaev";
+  static const String COMPANY_2 = "Jurij Kuvaev, 38";
   static const String COMPANY_2_URL = "";
-  static const String COMPANY_2_POSITION = "8-week basic internship in mechanical engineering and "
-      "electrical engineering as part of the industrial engineering degree program.";
-  static const String COMPANY_2_ROLE_1 =
-      "Developed and optimized electrical control systems using TwinCAT.";
-  static const String COMPANY_2_ROLE_2 =
-      "Assembled, installed, tested, and maintained pneumatic systems.";
-  static const String COMPANY_2_ROLE_3 =
-      "Manufactured various metal components using various production methods with the help of hand "
-      "tools, lathes, and milling machines.";
+  static const String COMPANY_2_POSITION = "Industriemechaniker";
+  // static const String COMPANY_2_ROLE_1 =
+  //     "Developed and optimized electrical control systems using TwinCAT.";
+  // static const String COMPANY_2_ROLE_2 =
+  //     "Assembled, installed, tested, and maintained pneumatic systems.";
+  // static const String COMPANY_2_ROLE_3 =
+  //     "Manufactured various metal components using various production methods with the help of hand "
+  //     "tools, lathes, and milling machines.";
   static const String COMPANY_2_LOCATION = "";
 
   //
-  static const String COMPANY_3_DURATION = "Since Dec 2022";
-  static const String COMPANY_3 = "Student Assistant - Technical University of Dortmund";
+  static const String COMPANY_3_DURATION = "Niklas Benski";
+  static const String COMPANY_3 = "Niklas Benski, 27";
   static const String COMPANY_3_URL = "";
-  static const String COMPANY_3_POSITION =
-      "Supporting research at the Institute of Robotics Research in the "
-      "field of glare-free high beams and pixel light.";
-  static const String COMPANY_3_ROLE_1 =
-      "Developed a control system for a physically simulated car to track a spline path in Unreal "
-      "Engine using Blueprints.";
-  static const String COMPANY_3_ROLE_2 =
-      "Created and optimized a C++ script for a camera attached to a physics simulated car to "
-      "capture and transformed 3D bounding boxes of cars and pedestrians into 2D camera space and "
-      "saving the information in PNG and TXT files.";
-  static const String COMPANY_3_ROLE_3 =
-      "Currently writing a scientific report on the application and optimization of the mentioned "
-      "script for training the YOLOv8 AI using automatically generated day and night data for car and "
-      "pedestrian detection.";
+  static const String COMPANY_3_POSITION = "Konstruktionsmechaniker für Feinblechtechnik";
+  // static const String COMPANY_3_ROLE_1 =
+  //     "Developed a control system for a physically simulated car to track a spline path in Unreal "
+  //     "Engine using Blueprints.";
+  // static const String COMPANY_3_ROLE_2 =
+  //     "Created and optimized a C++ script for a camera attached to a physics simulated car to "
+  //     "capture and transformed 3D bounding boxes of cars and pedestrians into 2D camera space and "
+  //     "saving the information in PNG and TXT files.";
+  // static const String COMPANY_3_ROLE_3 =
+  //     "Currently writing a scientific report on the application and optimization of the mentioned "
+  //     "script for training the YOLOv8 AI using automatically generated day and night data for car and "
+  //     "pedestrian detection.";
   static const String COMPANY_3_LOCATION = "";
 
   //
   static const String Name_Seitenleiste = "Daniel Grams";
-  static const String Name = "Daniel Grams";
+  static const String Name = "Daniel Grams, 24";
   static const String COMPANY_4_URL = "";
   static const String COMPANY_4_POSITION =
-      "Responsible for the development of a web and app platform for "
-      "environmental protection and charitable purposes, based on a proprietary crypto token on the "
-      "Polygon Blockchain";
-  static const String COMPANY_4_ROLE_1 =
-      "Established a comprehensive requirements analysis and created designs and wireframes according to "
-      "the founder's vision.";
-  static const String COMPANY_4_ROLE_2 =
-      "Built a flexible infrastructure and a streamlined production pipeline, optimizing the software "
-      "iteration loop.";
-  static const String COMPANY_4_ROLE_3 =
-      "Created and implemented the crypto token, including its smart contract, utilizing Solidity.";
-  static const String COMPANY_4_ROLE_4 =
-      "Developed the prototype using Flutter and Dart and presented it at the KUER.NRW Green "
-      "Entrepreneurship Fair in Gelsenkirchen.";
-  static const String COMPANY_4_ROLE_5 = "Currently developing the Minimum Viable Product .";
+      "Fachkraft für Metalltechnik in der FR Montagetechnik und CNC-Fachkraft";
+  // static const String COMPANY_4_ROLE_1 =
+  //     "Established a comprehensive requirements analysis and created designs and wireframes according to "
+  //     "the founder's vision.";
+  // static const String COMPANY_4_ROLE_2 =
+  //     "Built a flexible infrastructure and a streamlined production pipeline, optimizing the software "
+  //     "iteration loop.";
+  // static const String COMPANY_4_ROLE_3 =
+  //     "Created and implemented the crypto token, including its smart contract, utilizing Solidity.";
+  // static const String COMPANY_4_ROLE_4 =
+  //     "Developed the prototype using Flutter and Dart and presented it at the KUER.NRW Green "
+  //     "Entrepreneurship Fair in Gelsenkirchen.";
+  // static const String COMPANY_4_ROLE_5 = "Currently developing the Minimum Viable Product .";
   static const String COMPANY_4_LOCATION = "";
 
   /// Font Family

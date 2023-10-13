@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:projekt_gruppe_3/pages/imprint/imprint.dart';
 
-import '../pages/contact/contact_page.dart';
+import '../pages/collaborators/collaborators_page.dart';
 import '../pages/home/home_page.dart';
 import '../pages/project/project_page.dart';
 import '../pages/team/team_page.dart';
@@ -34,20 +35,25 @@ class RouteConfiguration {
   /// take priority.
   static List<Path> paths = <Path>[
     Path(
-      r'^' + ContactPage.contactPageRoute,
-      (context, matches) => const ContactPage(),
+      r'^' + CollaboratorsPage.collaboratorsPageRoute,
+      (context, matches) => const CollaboratorsPage(),
     ),
     Path(
-      r'^' + AboutPage.aboutPageRoute,
-      (context, matches) => const AboutPage(),
+      r'^' + ProjectPage.aboutPageRoute,
+      (context, matches) => const ProjectPage(),
     ),
     // Path(
     //   r'^' + WorksPage.worksPageRoute,
     //   (context, matches) => const WorksPage(),
     // ),
     Path(
-      r'^' + ExperiencePage.experiencePageRoute,
-      (context, matches) => const ExperiencePage(),
+      r'^' + TeamPage.experiencePageRoute,
+      (context, matches) => const TeamPage(),
+    ),
+
+    Path(
+      r'^' + ImprintPage.imprintPageRoute,
+      (context, matches) => const ImprintPage(),
     ),
     // Path(
     //   r'^' + CertificationPage.certificationPageRoute,
@@ -55,7 +61,7 @@ class RouteConfiguration {
     // ),
     Path(
       r'^' + HomePage.homePageRoute,
-      (context, matches) => HomePage(),
+      (context, matches) => const HomePage(),
     ),
   ];
 

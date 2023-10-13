@@ -224,7 +224,7 @@ class ContentBuilderWithImages extends StatelessWidget {
                 ),
                 const SpaceH16(),
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(16.0),
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
                         // maxWidth: imageWidthLarge,
@@ -277,7 +277,7 @@ class ContentBuilderWithImages extends StatelessWidget {
                       ),
                       const SpaceH16(),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
+                        borderRadius: BorderRadius.circular(16.0),
                         child: ConstrainedBox(
                           constraints: BoxConstraints(
                               // maxWidth: imageWidthLarge,

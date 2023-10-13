@@ -6,8 +6,8 @@ import '../../../../utils/values/values.dart';
 import '../../../utils/values/spaces.dart';
 import 'project_header_description.dart';
 
-class AboutHeader extends StatelessWidget {
-  const AboutHeader({
+class ProjectHeader extends StatelessWidget {
+  const ProjectHeader({
     required this.width,
     required this.controller,
     Key? key,
@@ -37,13 +37,13 @@ class AboutHeader extends StatelessWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              AboutHeaderDescription(
+              ProjectHeaderDescription(
                 controller: controller,
                 width: widthOfScreen(context),
               ),
               const SpaceH30(),
               ClipRRect(
-                borderRadius: BorderRadius.circular(40),
+                borderRadius: BorderRadius.circular(16.0),
                 child: Image.asset(
                   ImagePath.DEV,
                   fit: BoxFit.cover,
@@ -57,7 +57,7 @@ class AboutHeader extends StatelessWidget {
           return Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              AboutHeaderDescription(
+              ProjectHeaderDescription(
                 controller: controller,
                 width: width * 0.55,
               ),
@@ -65,7 +65,7 @@ class AboutHeader extends StatelessWidget {
                 width: spacing,
               ),
               ClipRRect(
-                borderRadius: BorderRadius.circular(40.0),
+                borderRadius: BorderRadius.circular(16.0),
                 child: ConstrainedBox(
                   constraints: BoxConstraints(
                     maxWidth: imageWidthLarge,

@@ -5,8 +5,8 @@ import '../../../utils/values/spaces.dart';
 import '../../../utils/values/values.dart';
 import '../../../widgets/animations/animated_text_slide_box_transition.dart';
 
-class AboutHeaderDescription extends StatelessWidget {
-  const AboutHeaderDescription({
+class ProjectHeaderDescription extends StatelessWidget {
+  const ProjectHeaderDescription({
     required this.controller,
     required this.width,
     Key? key,
