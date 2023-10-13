@@ -40,13 +40,12 @@ class StringConst {
   ///
   static const String HI = "Willkommen auf unserer Projektseite,";
   static const String DEV_INTRO = "wir sind die Projektgruppe 3.";
-  static const String DEV_TITLE =
-      "Angehende Techniker in der Fachrichtung\nMaschinenbautechnik.";
+  static const String DEV_TITLE = "";
   static const String DEV_DESC = "Daniel G./ Niklas B./ Jurij K.";
   static const String SEE_MY_WORK = "Das Projekt";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String Website_Into =
-      "Auf dieser Website wollen wir euch unser Projekt im Rahmen der Weiterbildung zum Staatlich geprüften Techniker, in der Fachrichtung Maschinenbautechnik präsentieren.\nBei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
+      "Auf dieser Website wollen wir euch unser Projekt vorstellen.\nBei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
   static const String SELECTION = "Here is selection of my recent work.";
   static const String THERES_MORE = "There's more";
   static const String VIEW_ALL_PROJECTS = "view all projects";
@@ -93,18 +92,13 @@ class StringConst {
   // static const String ABOUT_DEV_CATCH_LINE_5 = "";
   static const String Beschreibung_Projekt = "Beschreibung";
   static const String Beschreibungs_Titel = "Das Projekt";
-  static const String Inhalt_der_Beschreibung =
-      "Die Themen der Projektarbeit wurden im ersten Semester der Weiterbildung zum staatlich"
-      "geprüften Techniker in der Fachrichtung Maschinenbautechnik von den Projektlehrern vermittelt."
-      " In der Phase der Projektfindung ging es darum, den richtigen Projektpartner zu finden,"
-      " idealerweise ein ortsansässiges Maschinenbauunternehmen, "
-      "dass ihr Anforderungsprofil und die Kenntnisse Ihrer Studierenden berücksichtigt.";
+  static const String Inhalt_der_Beschreibung = "";
   static const String Inhalt_Beschreibung2 =
-      "Zu unserem Glück hat sich der ehemalige Arbeitgeber von Jurij Kuvaev,"
+      "Bei der Projektfindung hat sich zu unserem Glück der ehemalige Arbeitgeber von Jurij Kuvaev,"
       " die Brock Kehrtechnik GmbH, sich bereit erklärt uns ein Technikerprojekt  zu stellen."
       " Bei unserem Projekt beschäftigen wir uns über das vorhandene Transportsystem der Kehrmaschinenaufbauten.";
   static const String Inhalt_Beschreibung3 =
-      "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu finden ohne,"
+      "Ziel ist es,\n- eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu entwickeln,"
       " dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
       " Die Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern mittels einer Kippsicherung"
       " am Kehrmaschinenaufbau ist ein weiteres Ziel.";
