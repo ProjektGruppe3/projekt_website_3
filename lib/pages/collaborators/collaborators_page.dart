@@ -22,7 +22,8 @@ class CollaboratorsPage extends StatefulWidget {
   CollaboratorsPageState createState() => CollaboratorsPageState();
 }
 
-class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProviderStateMixin {
+class CollaboratorsPageState extends State<CollaboratorsPage>
+    with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
 
   late AnimationController _controller;
@@ -155,7 +156,7 @@ class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProvide
                     number: "/01 ",
                     width: contentAreaWidth,
                     section: StringConst.Beschreibung_Projekt.toUpperCase(),
-                    title: StringConst.Beschreibungs_Titel,
+                    title: StringConst.Uberschriftcollaborators,
                     body: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -177,23 +178,7 @@ class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProvide
                           width: widthOfBody,
                           maxLines: 30,
                           // factor: 1.25,
-                          text: StringConst.Inhalt_der_Beschreibung,
-                          textStyle: bodyText1Style,
-                        ),
-                        AnimatedPositionedText(
-                          controller: storySectionAnimation,
-                          width: widthOfBody,
-                          maxLines: 30,
-                          factor: 1.25,
-                          text: StringConst.Inhalt_Beschreibung2,
-                          textStyle: bodyText1Style,
-                        ),
-                        AnimatedPositionedText(
-                          controller: storySectionAnimation,
-                          width: widthOfBody,
-                          maxLines: 30,
-                          factor: 1.25,
-                          text: StringConst.Inhalt_Beschreibung3,
+                          text: StringConst.Projektpartner,
                           textStyle: bodyText1Style,
                         ),
                       ],
@@ -212,8 +197,8 @@ class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProvide
                     controller: _technologyController,
                     number: "/02 ",
                     width: contentAreaWidth,
-                    section: StringConst.Problematik_Beschreibung.toUpperCase(),
-                    title: StringConst.Problematikabschnitt,
+                    section: StringConst.Produktpallete.toUpperCase(),
+                    title: StringConst.Uberschriftproduktpalette,
                     body: LayoutBuilder(builder: (context, constraint) {
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -250,7 +235,8 @@ class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProvide
                           ),
                           InkWell(
                             onTap: () {
-                              Functions.launchUrl('https://www.brock-kehrtechnik.de/de/');
+                              Functions.launchUrl(
+                                  'https://www.brock-kehrtechnik.de/');
                             },
                             child: AnimatedLineThroughText(
                               text: 'www.brock-kehrtechnik.de',
@@ -268,7 +254,7 @@ class CollaboratorsPageState extends State<CollaboratorsPage> with TickerProvide
                             controller: technologySectionAnimation,
                             width: widthOfBody,
                             maxLines: 12,
-                            text: StringConst.Problematik_Inhalt,
+                            text: StringConst.Produkte,
                             textStyle: bodyText1Style,
                           ),
                         ],

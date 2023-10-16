@@ -103,7 +103,8 @@ class SubMenuData {
 class Data {
   static List<TopNavigationItemData> menuItems = <TopNavigationItemData>[
     TopNavigationItemData(name: StringConst.HOME, route: StringConst.HOME_PAGE),
-    TopNavigationItemData(name: StringConst.ABOUT, route: StringConst.ABOUT_PAGE),
+    TopNavigationItemData(
+        name: StringConst.ABOUT, route: StringConst.ABOUT_PAGE),
     // TopNavigationItemData(name: StringConst.WORK, route: StringConst.WORK_PAGE),
     TopNavigationItemData(
       name: StringConst.TEAM,
@@ -113,7 +114,8 @@ class Data {
     //   name: StringConst.CERTIFICATIONS,
     //   route: StringConst.CERTIFICATION_PAGE,
     // ),
-    TopNavigationItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
+    TopNavigationItemData(
+        name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
   ];
 
   static List<String> programmingLanguages = <String>[
@@ -152,7 +154,8 @@ class Data {
     "Wordpress",
   ];
 
-  static List<NoteWorthyProjectDetails> noteworthyProjects = <NoteWorthyProjectDetails>[
+  static List<NoteWorthyProjectDetails> noteworthyProjects =
+      <NoteWorthyProjectDetails>[
     NoteWorthyProjectDetails(
       projectName: StringConst.UDAGRAM_IMAGE_FILTERING,
       isPublic: true,
@@ -270,8 +273,9 @@ class Data {
   ];
 
   static final List<ImprintData> imprintData = <ImprintData>[
-    ImprintData(title: 'Imprint', content: 'Wallbaumweg 16\n44894 Bochum'),
+    ImprintData(title: 'Angaben gemäß § 5 TMG', content: ''),
+    ImprintData(title: 'Impressum', content: 'Wallbaumweg 16\n44894 Bochum'),
     ImprintData(content: 'Deutschland'),
-    ImprintData(title: 'asd', content: StringConst.IMPRINT_Line),
+    ImprintData(title: 'Kontakt', content: StringConst.IMPRINT_Line),
   ];
 }
