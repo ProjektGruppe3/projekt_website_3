@@ -24,7 +24,8 @@ class HomePageHeader extends StatefulWidget {
   HomePageHeaderState createState() => HomePageHeaderState();
 }
 
-class HomePageHeaderState extends State<HomePageHeader> with TickerProviderStateMixin {
+class HomePageHeaderState extends State<HomePageHeader>
+    with TickerProviderStateMixin {
   late AnimationController controller;
   late AnimationController scrollDownButtonController;
   late Animation<Offset> imageAnimation;
@@ -251,7 +252,7 @@ class HomePageHeaderState extends State<HomePageHeader> with TickerProviderState
                           AlertDialog(
                             title: const Text('Projektpräsentation'),
                             content: const Text(
-                              'Wann?\n  08.10.2024 um 8:00 Uhr\n\nWo?\n  An der TBS1 Ostring 25, 44787 Bochum, in der Aula',
+                              'Wann?\n  16.01.2024 um 9:20 Uhr\n\nWo?\n  An der TBS1 Ostring 25, 44787 Bochum, in der Aula, Raum 2',
                               style: TextStyle(fontWeight: FontWeight.normal),
                             ),
                             actions: <Widget>[
@@ -285,7 +286,7 @@ class HomePageHeaderState extends State<HomePageHeader> with TickerProviderState
                                 ),
                               ),
                               Text(
-                                'am 08.10.2024',
+                                'am 16.01.2024',
                                 style: TextStyle(
                                   fontSize: 24,
                                 ),
