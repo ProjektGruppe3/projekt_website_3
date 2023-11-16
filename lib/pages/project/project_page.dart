@@ -21,7 +21,8 @@ class ProjectPage extends StatefulWidget {
   ProjectPageState createState() => ProjectPageState();
 }
 
-class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin {
+class ProjectPageState extends State<ProjectPage>
+    with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
 
   late AnimationController _controller;
@@ -223,9 +224,10 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Row(
-                            children: [
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: <Widget>[
                               SizedBox(
-                                width: constraint.maxWidth * 0.5,
+                                width: constraint.maxWidth * 0.38,
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: ClipRRect(
@@ -238,7 +240,7 @@ class ProjectPageState extends State<ProjectPage> with TickerProviderStateMixin 
                                 ),
                               ),
                               SizedBox(
-                                width: constraint.maxWidth * 0.5,
+                                width: constraint.maxWidth * 0.62,
                                 child: Padding(
                                   padding: const EdgeInsets.all(16.0),
                                   child: ClipRRect(

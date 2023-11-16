@@ -17,6 +17,8 @@ class ImagePath {
   static const String Problematik = "$imageDir/Problematik.jpg";
   static const String Loesung = "$imageDir/Lösung.png";
   static const String Aufsetzen = "$imageDir/Aufsetzen.png";
+  static const String Cover = "$imageDir/Cover.jpg";
+
   // Team Bilder
   static const String DanielGramsfoto = "$imageDir/Daniel Grams.jpg";
   static const String NiklasBenskifoto = "$imageDir/Niklas Benski.jpg";
@@ -59,9 +61,11 @@ class ImagePath {
 
   // Certifications
   static const String ANDROID_BASICS_CERT = "$imageDir/android_basics_cert.png";
-  static const String CLOUD_DEVELOPER_CERT = "$imageDir/cloud_developer_cert.png";
+  static const String CLOUD_DEVELOPER_CERT =
+      "$imageDir/cloud_developer_cert.png";
   static const String CMU_MASTERS_CERT = "$imageDir/cmu_cert.png";
-  static const String ASSOCIATE_ANDROID_DEV = "$imageDir/associate_android_dev.png";
+  static const String ASSOCIATE_ANDROID_DEV =
+      "$imageDir/associate_android_dev.png";
   static const String DATA_SCIENCE_CERT = "$imageDir/data_science_cert.png";
 
   // Projects
@@ -71,27 +75,36 @@ class ImagePath {
   static const String NIMBUS = "$projectsDir/nimbus/nimbus.jpg";
 
   // Foodybite
-  static const String FOODY_BITE_COVER = "$projectsDir/foodybite/foodybite_cover.png";
-  static const String FOODY_BITE_HOME = "$projectsDir/foodybite/foodybite_home.png";
-  static const String FOODY_BITE_STARTING_FLOW = "$projectsDir/foodybite/foodybite_starting_flow.png";
-  static const String FOODY_BITE_HOME_FLOW = "$projectsDir/foodybite/foodybite_home_flow.png";
+  static const String FOODY_BITE_COVER =
+      "$projectsDir/foodybite/foodybite_cover.png";
+  static const String FOODY_BITE_HOME =
+      "$projectsDir/foodybite/foodybite_home.png";
+  static const String FOODY_BITE_STARTING_FLOW =
+      "$projectsDir/foodybite/foodybite_starting_flow.png";
+  static const String FOODY_BITE_HOME_FLOW =
+      "$projectsDir/foodybite/foodybite_home_flow.png";
   static const String FOODY_BITE_REVIEW_FLOW =
       "$projectsDir/foodybite/foodybite_review_favorite_notifications_flow.png";
-  static const String FOODY_BITE_TYPOGRAPHY = "$projectsDir/foodybite/foodybite_typography.png";
+  static const String FOODY_BITE_TYPOGRAPHY =
+      "$projectsDir/foodybite/foodybite_typography.png";
 
   // Portfolio Site V2
-  static const String AERIUM_V2_COVER = "$projectsDir/aerium-v2/aerium_v2_cover.png";
+  static const String AERIUM_V2_COVER =
+      "$projectsDir/aerium-v2/aerium_v2_cover.png";
   static const String AERIUM_V2_OVERALL = "$projectsDir/aerium-v2/overall.jpg";
   static const String AERIUM_V2_FIRST = "$projectsDir/aerium-v2/first.jpg";
-  static const String AERIUM_V2_TYPOGRAPHY = "$projectsDir/aerium-v2/typography.jpg";
+  static const String AERIUM_V2_TYPOGRAPHY =
+      "$projectsDir/aerium-v2/typography.jpg";
   static const String AERIUM_V2_LAST = "$projectsDir/aerium-v2/last.jpg";
 
   // Drop
   static const String DROP_COVER = "$projectsDir/drop/drop_cover.png";
   static const String DROP_DESC = "$projectsDir/drop/drop_description.gif";
-  static const String DROP_EASY_ACCESS = "$projectsDir/drop/drop_easy_access.gif";
+  static const String DROP_EASY_ACCESS =
+      "$projectsDir/drop/drop_easy_access.gif";
   static const String DROP_FLOW_CHART = "$projectsDir/drop/drop_flowchart.png";
-  static const String DROP_MINIMAL_DESIGN = "$projectsDir/drop/drop_minimal_design.png";
+  static const String DROP_MINIMAL_DESIGN =
+      "$projectsDir/drop/drop_minimal_design.png";
   static const String DROP_SIMPLE = "$projectsDir/drop/drop_simple.png";
   static const String DROP_THANKS = "$projectsDir/drop/drop_thanks.gif";
   static const String DROP_WIREFRAMES = "$projectsDir/drop/drop_wireframes.gif";
@@ -99,45 +112,72 @@ class ImagePath {
   // Roam
   static const String ROAM_COVER = "$projectsDir/roam/roam_cover.jpeg";
   static const String ROAM_OVERALL = "$projectsDir/roam/roam_overall.jpeg";
-  static const String ROAM_ONBOARDING = "$projectsDir/roam/roam_onboarding.jpeg";
+  static const String ROAM_ONBOARDING =
+      "$projectsDir/roam/roam_onboarding.jpeg";
   static const String ROAM_HOME = "$projectsDir/roam/roam_home.jpeg";
   static const String ROAM_EXPLORE = "$projectsDir/roam/roam_explore.jpeg";
   static const String ROAM_PROFILE = "$projectsDir/roam/roam_profile.jpeg";
   static const String ROAM_FLOW_CHART = "$projectsDir/roam/roam_flow_chart.png";
-  static const String ROAM_WIREFRAMES_1 = "$projectsDir/roam/wireframes_app.jpeg";
-  static const String ROAM_WIREFRAMES_2 = "$projectsDir/roam/wireframes_onboarding.jpeg";
-  static const String ROAM_WIREFRAMES_3 = "$projectsDir/roam/wireframes_signup_login.jpeg";
+  static const String ROAM_WIREFRAMES_1 =
+      "$projectsDir/roam/wireframes_app.jpeg";
+  static const String ROAM_WIREFRAMES_2 =
+      "$projectsDir/roam/wireframes_onboarding.jpeg";
+  static const String ROAM_WIREFRAMES_3 =
+      "$projectsDir/roam/wireframes_signup_login.jpeg";
 
   // Disney
-  static const String DISNEY_PLUS_COVER = "$projectsDir/disneyplus/disneyplus_cover.png";
-  static const String DISNEY_PLUS_SCREENS = "$projectsDir/disneyplus/mockups.png";
+  static const String DISNEY_PLUS_COVER =
+      "$projectsDir/disneyplus/disneyplus_cover.png";
+  static const String DISNEY_PLUS_SCREENS =
+      "$projectsDir/disneyplus/mockups.png";
 
-  static const String DISNEY_PLUS_1 = "$projectsDir/disneyplus/disneyplus_header.png";
-  static const String DISNEY_PLUS_2 = "$projectsDir/disneyplus/disneyplus_cover.png";
-  static const String DISNEY_PLUS_3 = "$projectsDir/disneyplus/disneyplus_description.png";
-  static const String DISNEY_PLUS_4 = "$projectsDir/disneyplus/disneyplus_theme.png";
-  static const String DISNEY_PLUS_5 = "$projectsDir/disneyplus/disneyplus_mockups.png";
-  static const String DISNEY_PLUS_6 = "$projectsDir/disneyplus/disneyplus_designs.png";
-  static const String DISNEY_PLUS_7 = "$projectsDir/disneyplus/disneyplus_more_description.png";
-  static const String DISNEY_PLUS_8 = "$projectsDir/disneyplus/disneyplus_downloads_feature.png";
-  static const String DISNEY_PLUS_9 = "$projectsDir/disneyplus/disneyplus_great_menu.png";
-  static const String DISNEY_PLUS_10 = "$projectsDir/disneyplus/disneyplus_profiles.png";
-  static const String DISNEY_PLUS_11 = "$projectsDir/disneyplus/disneyplus_home.png";
-  static const String DISNEY_PLUS_12 = "$projectsDir/disneyplus/disneyplus_components.png";
-  static const String DISNEY_PLUS_13 = "$projectsDir/disneyplus/disneyplus_the_end.png";
+  static const String DISNEY_PLUS_1 =
+      "$projectsDir/disneyplus/disneyplus_header.png";
+  static const String DISNEY_PLUS_2 =
+      "$projectsDir/disneyplus/disneyplus_cover.png";
+  static const String DISNEY_PLUS_3 =
+      "$projectsDir/disneyplus/disneyplus_description.png";
+  static const String DISNEY_PLUS_4 =
+      "$projectsDir/disneyplus/disneyplus_theme.png";
+  static const String DISNEY_PLUS_5 =
+      "$projectsDir/disneyplus/disneyplus_mockups.png";
+  static const String DISNEY_PLUS_6 =
+      "$projectsDir/disneyplus/disneyplus_designs.png";
+  static const String DISNEY_PLUS_7 =
+      "$projectsDir/disneyplus/disneyplus_more_description.png";
+  static const String DISNEY_PLUS_8 =
+      "$projectsDir/disneyplus/disneyplus_downloads_feature.png";
+  static const String DISNEY_PLUS_9 =
+      "$projectsDir/disneyplus/disneyplus_great_menu.png";
+  static const String DISNEY_PLUS_10 =
+      "$projectsDir/disneyplus/disneyplus_profiles.png";
+  static const String DISNEY_PLUS_11 =
+      "$projectsDir/disneyplus/disneyplus_home.png";
+  static const String DISNEY_PLUS_12 =
+      "$projectsDir/disneyplus/disneyplus_components.png";
+  static const String DISNEY_PLUS_13 =
+      "$projectsDir/disneyplus/disneyplus_the_end.png";
 
   // Flutter Catalog
-  static const String FLUTTER_CATALOG_COVER = "$projectsDir/flutter_catalog/flutter_catalog_cover.png";
-  static const String FLUTTER_CATALOG_SCREENS = "$projectsDir/flutter_catalog/screens.png";
+  static const String FLUTTER_CATALOG_COVER =
+      "$projectsDir/flutter_catalog/flutter_catalog_cover.png";
+  static const String FLUTTER_CATALOG_SCREENS =
+      "$projectsDir/flutter_catalog/screens.png";
 
-  static const String FLUTTER_CATALOG_1 = "$projectsDir/flutter_catalog/typography.png";
-  static const String FLUTTER_CATALOG_2 = "$projectsDir/flutter_catalog/onboarding.png";
-  static const String FLUTTER_CATALOG_3 = "$projectsDir/flutter_catalog/activities.png";
-  static const String FLUTTER_CATALOG_4 = "$projectsDir/flutter_catalog/stats.png";
-  static const String FLUTTER_CATALOG_5 = "$projectsDir/flutter_catalog/thanks.png";
+  static const String FLUTTER_CATALOG_1 =
+      "$projectsDir/flutter_catalog/typography.png";
+  static const String FLUTTER_CATALOG_2 =
+      "$projectsDir/flutter_catalog/onboarding.png";
+  static const String FLUTTER_CATALOG_3 =
+      "$projectsDir/flutter_catalog/activities.png";
+  static const String FLUTTER_CATALOG_4 =
+      "$projectsDir/flutter_catalog/stats.png";
+  static const String FLUTTER_CATALOG_5 =
+      "$projectsDir/flutter_catalog/thanks.png";
 
   // Login Catalog
-  static const String LOGIN_CATALOG_COVER = "$projectsDir/login_catalog/login_catalog_cover.jpg";
+  static const String LOGIN_CATALOG_COVER =
+      "$projectsDir/login_catalog/login_catalog_cover.jpg";
   static const String LOGIN_DESIGN_4 = "$projectsDir/login_catalog/login4.png";
   static const String LOGIN_DESIGN_5 = "$projectsDir/login_catalog/login5.png";
   static const String LOGIN_DESIGN_7 = "$projectsDir/login_catalog/login7.jpeg";
@@ -145,16 +185,21 @@ class ImagePath {
   static const String LOGIN_DESIGN_9 = "$projectsDir/login_catalog/login9.png";
 
   // OTP Textfield Package
-  static const String OTP_TEXTFIELD_COVER = "$projectsDir/otp_package/otp_cover.png";
+  static const String OTP_TEXTFIELD_COVER =
+      "$projectsDir/otp_package/otp_cover.png";
 
   // Aerium
-  static const String AERIUM_COVER = "$projectsDir/aerium-v1/portfolio_cover.png";
+  static const String AERIUM_COVER =
+      "$projectsDir/aerium-v1/portfolio_cover.png";
 
-  static const String AERIUM_DESIGN_2 = "$projectsDir/aerium-v1/portfolio_design_2.png";
-  static const String AERIUM_DESIGN_3 = "$projectsDir/aerium-v1/portfolio_design_3.png";
+  static const String AERIUM_DESIGN_2 =
+      "$projectsDir/aerium-v1/portfolio_design_2.png";
+  static const String AERIUM_DESIGN_3 =
+      "$projectsDir/aerium-v1/portfolio_design_3.png";
 
   // Amor
-  static const String AMOR_COVER = "$projectsDir/login_catalog/foodybite_cover.png";
+  static const String AMOR_COVER =
+      "$projectsDir/login_catalog/foodybite_cover.png";
 
   // Outfitr
   static const String OUTFITR_COVER = "$projectsDir/outfitr/outfitr_cover.jpg";

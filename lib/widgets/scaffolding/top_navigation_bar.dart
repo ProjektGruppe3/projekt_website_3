@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../utils/adaptive_layout.dart';
@@ -98,8 +99,66 @@ class TopNavigationBar extends StatelessWidget {
           Row(
             children: <Widget>[
               AppLogo(titleColor: appLogoColor),
+              const SpaceW60(),
+              Column(
+                children: <Widget>[
+                  InkWell(
+                    onTap: () {
+                      /// GetX Popup
+                      Get.dialog(
+                        AlertDialog(
+                          title: const Text('Projektpräsentation'),
+                          content: const Text(
+                            'Wann?\n  16.01.2024 um 9:20 Uhr\n\nWo?\n  An der TBS1 Ostring 25, 44787 Bochum, in der Aula, Raum 2',
+                            style: TextStyle(fontWeight: FontWeight.normal),
+                          ),
+                          actions: <Widget>[
+                            TextButton(
+                              onPressed: () {
+                                Get.back();
+                              },
+                              child: const Text(
+                                'OK',
+                                style: TextStyle(color: Colors.black),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                    child: Card(
+                      elevation: 2,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Icon(
+                              Icons.info_outline,
+                              size: 20,
+                              color: Colors.black,
+                            ),
+                            SpaceW4(),
+                            Text(
+                              'Projektpräsentation am 16.01.2024',
+                              style: TextStyle(
+                                fontSize: 16,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SpaceH12(),
+                ],
+              ),
               const Spacer(),
               ..._buildNavigationItems(context, menuList: Data.menuItems),
+
               // DevButton(
               //   height: Sizes.HEIGHT_36,
               //   hasIcon: false,

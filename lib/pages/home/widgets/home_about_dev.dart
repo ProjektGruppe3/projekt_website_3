@@ -33,7 +33,8 @@ class HomeAboutDevState extends State<HomeAboutDev> {
       parent: widget.controller,
       curve: const Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
     );
-    final double headerFontSize = responsiveSize(context, 28, 48, medium: 36, small: 32);
+    final double headerFontSize =
+        responsiveSize(context, 24, 40, medium: 30, small: 28);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,28 +44,28 @@ class HomeAboutDevState extends State<HomeAboutDev> {
           child: AnimatedTextSlideBoxTransition(
             controller: widget.controller,
             text: StringConst.HI,
-            width: widget.width,
-            maxLines: 3,
+            width: widget.width * 0.24,
+            maxLines: 10,
             textStyle: textTheme.headline2?.copyWith(
               color: AppColors.black,
               fontSize: headerFontSize,
             ),
           ),
         ),
-        const SizedBox(height: 12.0),
-        Container(
-          margin: margin,
-          child: AnimatedTextSlideBoxTransition(
-            controller: widget.controller,
-            text: StringConst.DEV_INTRO,
-            width: widget.width,
-            maxLines: 3,
-            textStyle: textTheme.headline2?.copyWith(
-              color: AppColors.black,
-              fontSize: headerFontSize,
-            ),
-          ),
-        ),
+        // const SizedBox(height: 12.0),
+        // Container(
+        //   margin: margin,
+        //   child: AnimatedTextSlideBoxTransition(
+        //     controller: widget.controller,
+        //     text: StringConst.DEV_INTRO,
+        //     width: widget.width,
+        //     maxLines: 3,
+        //     textStyle: textTheme.headline2?.copyWith(
+        //       color: AppColors.black,
+        //       fontSize: headerFontSize,
+        //     ),
+        //   ),
+        // ),
         const SizedBox(height: 12.0),
         Container(
           margin: margin,
@@ -144,7 +145,8 @@ class HomeAboutDevState extends State<HomeAboutDev> {
     required data,
   }) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-    final TextStyle? style = textTheme.bodyText1?.copyWith(color: AppColors.grey750);
+    final TextStyle? style =
+        textTheme.bodyText1?.copyWith(color: AppColors.grey750);
     final TextStyle? slashStyle = textTheme.bodyText1?.copyWith(
       color: AppColors.grey750,
       fontWeight: FontWeight.w400,
