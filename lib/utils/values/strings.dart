@@ -119,7 +119,7 @@ class StringConst {
   static const String Uberschriftcollaborators = "Unser Projektpartner";
   static const String Problematikabschnitt = "Die Probleme";
   static const String Problematik_Inhalt =
-      "Beim begutachten des IST-Zustandes sind uns einige Mängel aufgefallen:\n1. Beim Ausrichten kann es zu Lackbeschädigungen des Aufbaus kommen, weil die Ketten am oberen Ende durch mehrfachen Nachjustieren der ca. 30kg schweren Hacken den Lack abkratzen.\n2. Man benötigt mehrere Anläufe um den Aufbau auf dem LKW-Chassis sicher und unbeschädigt zu platzieren dies erfolgt mithilfe eines Deckenkrans.\n3. Es besteht eine hohe Gefahr während des gesamten Prozesses, dass Mitarbeiter sich verletzen können.";
+      "Beim begutachten des IST-Zustandes sind uns einige Mängel aufgefallen:\n1. Lackbeschädigungen des Aufbaus beim Ausrichten, weil die Ketten am oberen Ende durch mehrfachen Nachjustieren der ca. 30kg schweren Hacken den Lack abkratzen.\n2.  Mehrere Anläufe nötig um den Aufbau auf dem LKW-Chassis aufzusetzen dies erfolgt mithilfe eines Deckenkrans.\n3. Es besteht eine hohe Gefahr während des gesamten Prozesses, dass Mitarbeiter sich verletzen können.";
   static const String Loesungsansatz = "Lösung";
   static const String ABOUT_DEV_CONTACT_SOCIAL = "Lösungsansatz";
   static const String Loesungsinhalt =
