@@ -48,8 +48,7 @@ class StringConst {
   /// Home Page
   ///
   ///
-  static const String HI =
-      "Willkommen auf unserer Projektseite, wir sind die Projektgruppe 3.";
+  static const String HI = "Willkommen auf unserer Projektseite.";
   static const String DEV_INTRO = "wir sind die Projektgruppe 3.";
   static const String DEV_TITLE = "";
   static const String DEV_DESC = "Daniel G./ Niklas B./ Jurij K.";
