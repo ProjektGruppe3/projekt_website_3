@@ -49,8 +49,8 @@ class StringConst {
   ///
   ///
   static const String HI =
-      "Willkommen auf unserer Projektseite, wir sind die Projektgruppe 3.";
-  static const String DEV_INTRO = "wir sind die Projektgruppe 3.";
+      "Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinen-\naufbauten.";
+  static const String DEV_INTRO = "";
   static const String DEV_TITLE = "";
   static const String DEV_DESC = "Daniel G./ Niklas B./ Jurij K.";
   static const String SEE_MY_WORK = "Das Projekt";
@@ -100,7 +100,7 @@ class StringConst {
   // static const String ABOUT_DEV_CATCH_LINE_2 = "";
   // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
   static const String ABOUT_DEV_CATCH_LINE_4 =
-      "Diese wird ab dem zweiten Semester erarbeitet.";
+      "Diese wurde ab dem zweiten Semester erarbeitet.";
   // static const String ABOUT_DEV_CATCH_LINE_5 = "";
   static const String Beschreibung_Projekt = "Beschreibung";
   static const String Beschreibungs_Titel = "Das Projekt";
@@ -112,7 +112,7 @@ class StringConst {
   static const String Inhalt_Beschreibung3 =
       "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu entwickeln,"
       " dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
-      " Die Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern mittels einer Kippsicherung"
+      "\nDie Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern "
       "am Kehrmaschinenaufbau ist ein weiteres Ziel.";
   static const String Problematik_Beschreibung = "Problematik";
   static const String PROGRAMMING_LANGUAGES = "Programming Languages";
@@ -124,7 +124,7 @@ class StringConst {
   static const String Loesungsansatz = "Lösung";
   static const String ABOUT_DEV_CONTACT_SOCIAL = "Lösungsansatz";
   static const String Loesungsinhalt =
-      "Bei dem vorläufigen Lösungsentwurf ist es unser Ziel, so viele Mängel wie möglich zu beseitigen.\nmehr Informationen erhalten sie an unserem Messestand als auch an der Projektpräsentation.\nInformationen zu Wann und Wo die Präsentation stattfindet können Sie unserer Homepage entnehmen. ";
+      "Bei unserer Lösung ist es unser Ziel, so viele Mängel wie möglich zu beseitigen.\nmehr Informationen erhalten sie an unserem Messestand als auch an der Projektpräsentation.\nInformationen zu Wann und Wo die Präsentation stattfindet können Sie unserer Homepage entnehmen. ";
   static const String Produkte =
       "Die Produktpalette der BROCK Kehrtechnik GmbH umfasst ein breites Spektrum an Kehrmaschinen die hier abgebildet sind.\nVon kommunalen Alleskehrern bis hin zu großen Kehrmaschinen für Baustellen die BROCK Kehrtechnik GmbH hat alles parat.\nBei Interesse und für mehr Informationen zu Kehrmaschinen, folgen Sie einfach dem Link unter den Bildern der wird sie weiterleiten an die Homepage der BROCK Kehrtechnik GmbH.";
   static const String Projektpartner =
