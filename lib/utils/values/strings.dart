@@ -50,7 +50,8 @@ class StringConst {
   ///
   static const String HI =
       "Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinen-\naufbauten.";
-  static const String DEV_INTRO = "";
+
+  static const String DEV_INTRO = "wir sind die Projektgruppe 3.";
   static const String DEV_TITLE = "";
   static const String DEV_DESC = "Daniel G./ Niklas B./ Jurij K.";
   static const String SEE_MY_WORK = "Das Projekt";
