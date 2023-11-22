@@ -107,9 +107,9 @@ class StringConst {
   static const String Beschreibungs_Titel = "Das Projekt";
   static const String Inhalt_der_Beschreibung = "";
   static const String Inhalt_Beschreibung2 =
-      "Bei der Projektfindung hat zu unserem Glück der ehemalige Arbeitgeber von Jurij Kuvaev,"
-      " die Brock Kehrtechnik GmbH, sich bereit erklärt uns ein Technikerprojekt zu stellen."
-      " In diesem Projekt beschäftigen wir uns über das vorhandene Transportsystem der Kehrmaschinenaufbauten.";
+      "Bei der Suche nach Projektmöglichkeiten hat sich der ehemalige Arbeitgeber von Jurij Kuvaev,"
+      " die Brock Kehrtechnik GmbH, freundlicherweise dazu bereit erklärt, uns ein Technikerprojekt zur Verfügung zu stellen."
+      " In diesem Projekt befassen wir uns mit der Analyse des bestehenden Transportsystems der Kehrmaschinenaufbauten.";
   static const String Inhalt_Beschreibung3 =
       "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu entwickeln,"
       " dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
