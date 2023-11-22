@@ -34,23 +34,42 @@ class HomeAboutDevState extends State<HomeAboutDev> {
       curve: const Interval(0.6, 1.0, curve: Curves.fastOutSlowIn),
     );
     final double headerFontSize =
-        responsiveSize(context, 24, 40, medium: 30, small: 28);
+        responsiveSize(context, 24, 36, medium: 28, small: 24);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Container(
-          margin: margin,
-          child: AnimatedTextSlideBoxTransition(
-            controller: widget.controller,
-            text: StringConst.HI,
-            width: widget.width * 0.24,
-            maxLines: 10,
-            textStyle: textTheme.headline2?.copyWith(
-              color: AppColors.black,
-              fontSize: headerFontSize,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              margin: margin,
+              child: AnimatedTextSlideBoxTransition(
+                controller: widget.controller,
+                text: StringConst.HI,
+                width: widget.width * 0.22,
+                maxLines: 10,
+                textStyle: textTheme.headline2?.copyWith(
+                  color: AppColors.black,
+                  fontSize: headerFontSize,
+                ),
+              ),
             ),
-          ),
+            Container(
+              padding: EdgeInsets.only(right: widget.width * 0.18),
+              child: AnimatedTextSlideBoxTransition(
+                controller: widget.controller,
+                text:
+                    'Projektpräsentation\n\nWann?\n  16.01.2024 um 9:20 Uhr\n\nWo?\n  An der TBS1 Ostring 25, \n  44787 Bochum, \n  in der Aula, Raum 2',
+                width: widget.width * 0.22,
+                maxLines: 10,
+                textStyle: textTheme.headline2?.copyWith(
+                    color: AppColors.black,
+                    fontSize: headerFontSize - 16,
+                    fontWeight: FontWeight.normal),
+              ),
+            ),
+          ],
         ),
         // const SizedBox(height: 12.0),
         // Container(

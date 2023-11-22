@@ -154,7 +154,7 @@ class HomePageHeaderState extends State<HomePageHeader>
               curve: Curves.fastOutSlowIn,
               width: greyCircleSize,
               height: greyCircleSize,
-              margin: const EdgeInsets.all(41),
+              margin: const EdgeInsets.all(47),
               decoration: const BoxDecoration(
                 color: Colors.grey,
                 shape: BoxShape.circle,
@@ -169,7 +169,7 @@ class HomePageHeaderState extends State<HomePageHeader>
               curve: Curves.fastOutSlowIn,
               width: whiteCircleSize,
               height: whiteCircleSize,
-              margin: const EdgeInsets.all(40),
+              margin: const EdgeInsets.all(46),
               decoration: const BoxDecoration(
                 color: Colors.white,
                 shape: BoxShape.circle,
