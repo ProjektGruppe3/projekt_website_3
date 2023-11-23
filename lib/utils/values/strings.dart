@@ -111,10 +111,10 @@ class StringConst {
       " die Brock Kehrtechnik GmbH, freundlicherweise dazu bereit erklärt, uns ein Technikerprojekt zur Verfügung zu stellen."
       " In diesem Projekt befassen wir uns mit der Analyse des bestehenden Transportsystems der Kehrmaschinenaufbauten.";
   static const String Inhalt_Beschreibung3 =
-      "Ziel ist es, eine sichere Methode zum Aufsetzen der Kehrmaschinenaufbauten zu entwickeln,"
-      " dass sich die Kehrmaschinenaufbauten während des Aufsetzprozesses verformen oder Schaden nehmen."
-      "\nDie Gewährleistung der Arbeitssicherheit von ausführenden Mitarbeitern "
-      "am Kehrmaschinenaufbau ist ein weiteres Ziel.";
+      "Unser Ziel ist es, eine sichere Methode für den Transport der Kehrmaschinenaufbauten zu entwickeln,"
+      "\num sicherzustellen, dass während des Transportprozesses keine Verformungen oder Schäden auftreten."
+      "\nHierbei legen wir besonderen Wert auf die Arbeitssicherheit der Mitarbeiter,"
+      " die am Transport der Kehrmaschinenaufbauten beteiligt sind.";
   static const String Problematik_Beschreibung = "Problematik";
   static const String PROGRAMMING_LANGUAGES = "Programming Languages";
   static const String Produktpallete = "Produktpalette";
