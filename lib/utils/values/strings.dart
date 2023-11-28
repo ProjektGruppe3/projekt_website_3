@@ -57,7 +57,7 @@ class StringConst {
   static const String SEE_MY_WORK = "Das Projekt";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String Website_Into =
-      "Auf dieser Website wollen wir euch unser Projekt vorstellen.\nBei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
+      "Auf dieser Website wollen wir Ihnen unser Projekt vorstellen.\nBei unserer Projektarbeit handelt es sich um die Entwicklung und Konstruktion eines Transportsystems zum Aufsetzen von Kehrmaschinenaufbauten.";
   static const String SELECTION = "Here is selection of my recent work.";
   static const String THERES_MORE = "There's more";
   static const String VIEW_ALL_PROJECTS = "view all projects";
