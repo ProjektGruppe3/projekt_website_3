@@ -60,7 +60,7 @@ class HomeAboutDevState extends State<HomeAboutDev> {
               child: AnimatedTextSlideBoxTransition(
                 controller: widget.controller,
                 text:
-                    'Unsere Projektpräsentation findet am 16.01.2024 um 9:20 an der \nTBS1, Ostring 25, 44787 Bochum,\nin der Aula statt.\n\nBei Unseren Messestand finden sie im Raum 2.',
+                    'Unsere Projektpräsentation findet am 16.01.2024 um 9:20 in der \nTBS1, Ostring 25, 44787 Bochum,\nin der Aula statt.\n\nUnseren Messestand finden sie im Raum 2.',
                 width: widget.width * 0.22,
                 maxLines: 10,
                 textStyle: textTheme.headline2?.copyWith(
