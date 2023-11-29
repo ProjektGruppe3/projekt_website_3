@@ -5,7 +5,8 @@ part of values;
 class StringConst {
   //strings
   static const String APP_NAME = "Gruppe 3 Portfolio";
-  static const String appTitle = "Gruppe 3 Website";
+  static const String appTitle =
+      "Entwicklung und Konstruktion eines Transportsystems für Kehrmaschinenaufbauten";
   static const String SITE_URL = "https://Projektgruppe-3.github.com";
 
   static const String HOME = "Home";
@@ -42,7 +43,7 @@ class StringConst {
   /// Imprint Page
   ///
   static const String IMPRINT_Line =
-      "Telefon: +491725321854\nE-Mail: Grams_Daniel@web.de\nQuelle: https://www.e-recht24.de/impressum-generator.html";
+      "Telefon: +491725321854\nE-Mail: Grams_Daniel@web.de\nQuellen:https://www.e-recht24.de/impressum-generator.html\neRecht24 Disclaimer";
 
   ///
   /// Home Page
@@ -107,13 +108,11 @@ class StringConst {
   static const String Beschreibungs_Titel = "Das Projekt";
   static const String Inhalt_der_Beschreibung = "";
   static const String Inhalt_Beschreibung2 =
-      "Bei der Suche nach Projektmöglichkeiten hat sich der ehemalige Arbeitgeber von Jurij Kuvaev,"
-      " die Brock Kehrtechnik GmbH, freundlicherweise dazu bereit erklärt, uns ein Technikerprojekt zur Verfügung zu stellen."
-      " In diesem Projekt befassen wir uns mit der Analyse des bestehenden Transportsystems der Kehrmaschinenaufbauten.";
+      "Bei unserem Projekt beschäftigen wir uns mit dem aktuell unhandlichen und mühsamen Transportsystem.";
   static const String Inhalt_Beschreibung3 =
-      "Unser Ziel ist es, eine sichere Methode für den Transport der Kehrmaschinenaufbauten zu entwickeln,"
+      "Unser Ziel ist es, dieses durch eine sichere und simplere Methode für den Transport der Kehrmaschinenaufbauten zu ersetzen,"
       "\num sicherzustellen, dass während des Transportprozesses keine Verformungen oder Schäden auftreten."
-      "\nHierbei legen wir besonderen Wert auf die Arbeitssicherheit der Mitarbeiter,"
+      "Hierbei legen wir besonderen Wert auf die Arbeitssicherheit der Mitarbeiter,"
       " die am Transport der Kehrmaschinenaufbauten beteiligt sind.";
   static const String Problematik_Beschreibung = "Problematik";
   static const String PROGRAMMING_LANGUAGES = "Programming Languages";
@@ -173,7 +172,8 @@ class StringConst {
   static const String PROJECT_NAME = "Project Name";
 
   static const String INTRO = "Hi, my name is";
-  static const String DEV_NAME = "Projekt Gruppe 3";
+  static const String DEV_NAME =
+      "Entwicklung und Konstruktion eines Transportsystems für Kehrmaschinenaufbauten";
   static const String PUNCH_LINE = "I build things with flutter";
   static const String SPECIALITY = "FLUTTER DEV";
   static const String DESIGNED_IN = "Made in Ghana with ";

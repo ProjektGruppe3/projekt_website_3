@@ -4,10 +4,10 @@ import '../../../utils/values/values.dart';
 
 class AppLogo extends StatelessWidget {
   const AppLogo({
-    this.title = "PG3",
+    this.title = "Fachschulprojekt",
     this.titleColor = AppColors.black,
     this.titleStyle,
-    this.fontSize = 60,
+    this.fontSize = 40,
     Key? key,
   }) : super(key: key);
 
