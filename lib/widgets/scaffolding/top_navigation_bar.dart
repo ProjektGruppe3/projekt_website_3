@@ -131,25 +131,35 @@ class TopNavigationBar extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: <Widget>[
-                            Icon(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: LayoutBuilder(builder: (context, constraints) {
+                          if (Get.width < 1150) {
+                            return const Icon(
                               Icons.info_outline,
                               size: 20,
                               color: Colors.black,
-                            ),
-                            SpaceW4(),
-                            Text(
-                              'Projektpräsentation am 16.01.2024',
-                              style: TextStyle(
-                                fontSize: 16,
-                              ),
-                            ),
-                          ],
-                        ),
+                            );
+                          } else {
+                            return const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Icon(
+                                  Icons.info_outline,
+                                  size: 20,
+                                  color: Colors.black,
+                                ),
+                                SpaceW4(),
+                                Text(
+                                  'Projektpräsentation am 16.01.2024',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
+                              ],
+                            );
+                          }
+                        }),
                       ),
                     ),
                   ),
